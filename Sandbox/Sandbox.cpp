@@ -4,10 +4,8 @@ class Sandbox : public Hyperion::Application
 {
 public:
     Sandbox(){
-        
     }
     ~Sandbox(){
-        
     }
 };
 
