@@ -7,8 +7,8 @@ extern Hyperion::Application* CreateApplication();
     int main(int argc, char** argv)
     {
         Hyperion::Log::Init();
-        Hyperion::Log::GetCoreLogger()->warn("Initialized Log!");
-        Hyperion::Log::GetClientLogger()->info("Hello!");
+        HYPERION_CORE_WARN("Initialized Log!");
+        HYPERION_INFO("Hello!");
         
         printf("Hyperion Engine\n");
         auto app = CreateApplication();

@@ -1,9 +1,9 @@
 ﻿#pragma once
 
-#include "Hyperion\Application.h"
+#include "Hyperion/Core/Application.h"
 #include <stdio.h>
-#include "Hyperion/Log.h"
+#include "Hyperion/Core/Core.h"
 #include <spdlog/spdlog.h>
 //---------------Entry point---------------
-#include "Hyperion\EntryPoint.h"
+#include "Hyperion/Core/EntryPoint.h"
 //-----------------------------------------
