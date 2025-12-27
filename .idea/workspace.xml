@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BackendCodeEditorMiscSettings">
+    <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
+  </component>
+  <component name="CMakePresetLoader"><![CDATA[{
+  "useNewFormat": true
+}]]></component>
+  <component name="CMakeProjectFlavorService">
+    <option name="flavorId" value="CMakePlainProjectFlavor" />
+  </component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c8dd5f59-e93d-40e7-9f52-abc8fb001637" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hyperion/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sandbox/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion Engine.slnx" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion Engine.slnx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/EntryPoint.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/EntryPoint.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Log.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Log.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/x64/Debug/Hyperion.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/x64/Debug/Hyperion.ilk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/x64/Debug/Hyperion.tlog/CL.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/x64/Debug/Hyperion.tlog/CL.read.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/x64/Debug/Hyperion.tlog/CL.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/x64/Debug/Hyperion.tlog/CL.write.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/x64/Debug/Hyperion.tlog/link.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/x64/Debug/Hyperion.tlog/link.read.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/x64/Debug/Log.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/x64/Debug/Log.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/x64/Debug/vc143.idb" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/x64/Debug/vc143.idb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/x64/Debug/vc143.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/x64/Debug/vc143.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sandbox/x64/Debug/Sandbox.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/Sandbox/x64/Debug/Sandbox.ilk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sandbox/x64/Debug/Sandbox.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Sandbox/x64/Debug/Sandbox.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sandbox/x64/Debug/Sandbox.tlog/link.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Sandbox/x64/Debug/Sandbox.tlog/link.read.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sandbox/x64/Debug/vc143.idb" beforeDir="false" afterPath="$PROJECT_DIR$/Sandbox/x64/Debug/vc143.idb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sandbox/x64/Debug/vc143.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Sandbox/x64/Debug/vc143.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/x64/Debug/Hyperion.dll" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/Hyperion.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/x64/Debug/Hyperion.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/Hyperion.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/x64/Debug/Sandbox.exe" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/Sandbox.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/x64/Debug/Sandbox.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/Sandbox.pdb" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CMakeLists" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="s2ec8RYv" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2025" />
+    <option name="minorVersion" value="3.1" />
+    <option name="productBranch" value="Classic" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="37KbkXkBXmI1BD7HN9UGiC3RsSe" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.RadMigrateCodeStyle": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "RunOnceActivity.west.config.association.type.startup.service": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "CMakeSettings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="c8dd5f59-e93d-40e7-9f52-abc8fb001637" name="更改" comment="" />
+      <created>1766654855051</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1766654855051</updated>
+      <workItem from="1766654856812" duration="339000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VCPKGProject">
+    <isAutomaticCheckingOnLaunch value="false" />
+    <isAutomaticFoundErrors value="true" />
+    <isAutomaticReloadCMake value="true" />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>
