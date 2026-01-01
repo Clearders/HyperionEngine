@@ -1,11 +1,7 @@
 #pragma once
 
 #include "../Core/Core.h"
-#include "Hazel/Debug/Instrumentor.h"
-#include "Hazel/Core/Base.h"
-
-#include <functional>
-
+#include "../hyperionpch.h"
 namespace Hyperion {
 
 	// Events in Hazel are currently blocking, meaning when an event occurs it

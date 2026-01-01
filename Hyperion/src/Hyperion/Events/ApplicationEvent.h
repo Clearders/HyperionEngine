@@ -1,5 +1,6 @@
 #pragma once
 
+#include "../hyperionpch.h"
 #include "Event.h"
 
 namespace Hyperion {

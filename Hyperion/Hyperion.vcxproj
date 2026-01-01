@@ -318,6 +318,7 @@
       <AdditionalOptions>/utf-8 </AdditionalOptions>
       <LinkCompiled>true</LinkCompiled>
     </ClCompile>
+    <ClCompile Include="src\Hyperion\hyperionpch.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Hyperion.h" />
@@ -329,6 +330,7 @@
     <ClInclude Include="src\Hyperion\Events\Event.h" />
     <ClInclude Include="src\Hyperion\Events\KeyEvent.h" />
     <ClInclude Include="src\Hyperion\Events\MouseEvent.h" />
+    <ClInclude Include="src\Hyperion\hyperionpch.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

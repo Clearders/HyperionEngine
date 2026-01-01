@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="BackendCodeEditorMiscSettings">
+    <option name="/Default/Environment/Hierarchy/GeneratedFilesCacheKey/Timestamp/@EntryValue" value="6" type="long" />
     <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
   </component>
-  <component name="CMakePresetLoader"><![CDATA[{
-  "useNewFormat": true
-}]]></component>
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
   <component name="CMakeProjectFlavorService">
     <option name="flavorId" value="CMakePlainProjectFlavor" />
   </component>
@@ -16,34 +17,59 @@
     <option name="reloaded" value="true" />
   </component>
   <component name="CMakeRunConfigurationManager">
-    <generated />
+    <generated>
+      <config projectName="HyperionEngine" targetName="glfw" folderName="GLFW3" />
+      <config projectName="HyperionEngine" targetName="Hyperion" />
+      <config projectName="HyperionEngine" targetName="Sandbox" />
+      <config projectName="HyperionEngine" targetName="spdlog" />
+      <config projectName="HyperionEngine" targetName="update_mappings" folderName="GLFW3" />
+      <config projectName="HyperionEngine" targetName="uninstall" folderName="GLFW3" />
+    </generated>
   </component>
   <component name="CMakeSettings">
     <configurations>
-      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" GENERATION_OPTIONS="-DCMAKE_TOOLCHAIN_FILE=C:\Users\13191\.vcpkg-clion\vcpkg\scripts\buildsystems\vcpkg.cmake -DVCPKG_TARGET_TRIPLET=x64-mingw-dynamic" />
     </configurations>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8dd5f59-e93d-40e7-9f52-abc8fb001637" name="更改" comment="">
       <change afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Hyperion/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/hyperionpch.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/hyperionpch.h" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Sandbox/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hyperion Engine.slnx" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion Engine.slnx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/EntryPoint.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/EntryPoint.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Log.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Log.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/Hyperion.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/Hyperion.vcxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Application.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Application.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Core.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Core.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Log.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Log.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Log.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Log.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Events/ApplicationEvent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Events/ApplicationEvent.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Events/Event.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Events/Event.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Events/MouseEvent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Events/MouseEvent.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/x64/Debug/Application.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/x64/Debug/Application.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hyperion/x64/Debug/Hyperion.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/x64/Debug/Hyperion.ilk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/x64/Debug/Hyperion.tlog/CL.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/x64/Debug/Hyperion.tlog/CL.command.1.tlog" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hyperion/x64/Debug/Hyperion.tlog/CL.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/x64/Debug/Hyperion.tlog/CL.read.1.tlog" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hyperion/x64/Debug/Hyperion.tlog/CL.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/x64/Debug/Hyperion.tlog/CL.write.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hyperion/x64/Debug/Hyperion.tlog/link.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/x64/Debug/Hyperion.tlog/link.read.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/x64/Debug/Hyperion.tlog/Cl.items.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/x64/Debug/Hyperion.tlog/Cl.items.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/x64/Debug/Hyperion.tlog/link.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/x64/Debug/Hyperion.tlog/link.command.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/x64/Debug/Hyperion.tlog/link.secondary.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/x64/Debug/Hyperion.tlog/link.secondary.1.tlog" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hyperion/x64/Debug/Log.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/x64/Debug/Log.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hyperion/x64/Debug/vc143.idb" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/x64/Debug/vc143.idb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hyperion/x64/Debug/vc143.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/x64/Debug/vc143.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sandbox/x64/Debug/Sandbox.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/Sandbox/x64/Debug/Sandbox.ilk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sandbox/x64/Debug/Sandbox.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Sandbox/x64/Debug/Sandbox.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sandbox/x64/Debug/Sandbox.tlog/CL.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Sandbox/x64/Debug/Sandbox.tlog/CL.read.1.tlog" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sandbox/x64/Debug/Sandbox.tlog/link.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Sandbox/x64/Debug/Sandbox.tlog/link.read.1.tlog" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sandbox/x64/Debug/vc143.idb" beforeDir="false" afterPath="$PROJECT_DIR$/Sandbox/x64/Debug/vc143.idb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sandbox/x64/Debug/vc143.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Sandbox/x64/Debug/vc143.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/premake/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/premake/premake5.exe" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/x64/Debug/Hyperion.dll" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/Hyperion.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/x64/Debug/Hyperion.exp" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/Hyperion.exp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/x64/Debug/Hyperion.lib" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/Hyperion.lib" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/x64/Debug/Hyperion.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/Hyperion.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/x64/Debug/Sandbox.exe" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/Sandbox.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/x64/Debug/Sandbox.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/Sandbox.pdb" afterDir="false" />
@@ -56,6 +82,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -79,10 +106,10 @@
     <option name="minorVersion" value="3.1" />
     <option name="productBranch" value="Classic" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="37KbkXkBXmI1BD7HN9UGiC3RsSe" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -90,6 +117,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "CMake 应用程序.Sandbox.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.RadMigrateCodeStyle": "true",
@@ -107,16 +135,36 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "CMakeSettings",
+    "settings.editor.selected.configurable": "com.github.copilot.settings.chat.ChatConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+  <component name="RunManager" selected="CMake 应用程序.Sandbox">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Hyperion" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="HyperionEngine" TARGET_NAME="Hyperion" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Sandbox" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="HyperionEngine" TARGET_NAME="Sandbox" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="HyperionEngine" RUN_TARGET_NAME="Sandbox">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="spdlog" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="HyperionEngine" TARGET_NAME="spdlog" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake 应用程序.Hyperion" />
+      <item itemvalue="CMake 应用程序.Sandbox" />
+      <item itemvalue="CMake 应用程序.spdlog" />
+    </list>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
@@ -126,6 +174,9 @@
       <option name="presentableId" value="Default" />
       <updated>1766654855051</updated>
       <workItem from="1766654856812" duration="339000" />
+      <workItem from="1767257508127" duration="1425000" />
+      <workItem from="1767259573754" duration="1867000" />
+      <workItem from="1767277252848" duration="4253000" />
     </task>
     <servers />
   </component>
@@ -136,6 +187,10 @@
     <isAutomaticCheckingOnLaunch value="false" />
     <isAutomaticFoundErrors value="true" />
     <isAutomaticReloadCMake value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
