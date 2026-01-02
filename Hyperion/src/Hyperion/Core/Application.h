@@ -9,8 +9,8 @@ namespace Hyperion
         public:
         Application();
         virtual ~Application();
-        
-        void Run();
+
+        static void Run();
         
         
     };
