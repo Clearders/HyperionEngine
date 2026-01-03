@@ -3,8 +3,8 @@
 //
 #pragma once
 
-#include "WindowsWindow.h"
-#include "Hyperion/Core/Window.h"
+#include "../../Hyperion/Core/Window.h"
+#include <string>
 #include <GLFW/glfw3.h>
 #include <GLFW/glfw3native.h>
 
@@ -14,7 +14,6 @@
 
 
 
-#include "Hyperion/Core/Window.h"
 
 namespace Hyperion
 {

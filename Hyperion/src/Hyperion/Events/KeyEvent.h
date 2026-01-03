@@ -1,7 +1,7 @@
 #pragma once
 
 #include "Event.h"
-#include "Hazel/Core/KeyCodes.h"
+#include "../Core/KeyCodes.h"
 
 namespace Hyperion {
 

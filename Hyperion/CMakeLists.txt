@@ -19,6 +19,7 @@ add_library(Hyperion SHARED
         src/Hyperion/Core/Window.h
         src/Platform/Windows/WindowsWindow.cpp
         src/Platform/Windows/WindowsWindow.h
+        src/Hyperion/Core/KeyCodes.h
 )
 
 target_compile_features(Hyperion PUBLIC cxx_std_17)

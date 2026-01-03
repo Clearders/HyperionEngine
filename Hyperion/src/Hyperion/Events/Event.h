@@ -2,6 +2,9 @@
 
 #include "../Core/Core.h"
 #include "../hyperionpch.h"
+#include <sstream>
+#include <ostream>
+
 namespace Hyperion {
 
 	// Events in Hazel are currently blocking, meaning when an event occurs it
@@ -81,4 +84,3 @@ namespace Hyperion {
 	}
 
 }
-

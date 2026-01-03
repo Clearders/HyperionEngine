@@ -2,14 +2,24 @@
 // Created by 13191 on 2026/1/2.
 //
 
-#include "Hyperion/hyperionpch.h"
+// 使用相对路径包含工程的预编译头
+#include "../../Hyperion/hyperionpch.h"
 #include "WindowsWindow.h"
 
-#include "Hyperion/Core/Log.h"
+// 同步调整其他 Hyperion 头的相对路径，避免依赖外部 include 搜索路径
+#include "../../Hyperion/Core/Log.h"
+#include "../../Hyperion/Events/KeyEvent.h"
+#include "../../Hyperion/Events/MouseEvent.h"
+#include "../../Hyperion/Events/ApplicationEvent.h"
 
 namespace Hyperion
 {
     static bool s_GLFWInitialized = false;
+
+    static void GLFWErrorCallback(int error, const char* description)
+    {
+        HYPERION_CORE_ERROR("GLFW Error ({}, {})", error, description);
+    }
 
     Window* Window::Create(const WindowProps& props)
     {
@@ -23,6 +33,7 @@ namespace Hyperion
 
     WindowsWindow::~WindowsWindow()
     {
+        Shutdown();
     }
 
     void WindowsWindow::Init(const WindowProps& props)
@@ -37,6 +48,7 @@ namespace Hyperion
         {
             int success = glfwInit();
             HYPERION_CORE_ASSERT(success, "Could not initialize GLFW!");
+            glfwSetErrorCallback(GLFWErrorCallback);
             s_GLFWInitialized = true;
         }
 
@@ -44,6 +56,89 @@ namespace Hyperion
         glfwMakeContextCurrent(m_Window);
         glfwSetWindowUserPointer(m_Window, &m_Data);
         SetVSync(true);
+
+        // Set GLFW callbacks
+        glfwSetWindowSizeCallback(m_Window, [](GLFWwindow* window, int width, int height)
+        {
+            WindowData& data = *(WindowData*)glfwGetWindowUserPointer(window);
+            data.Width = width;
+            data.Height = height;
+
+            WindowResizeEvent event(width, height);
+            data.EventCallback(event);
+        });
+
+        glfwSetWindowCloseCallback(m_Window, [](GLFWwindow* window)
+        {
+            WindowData& data = *(WindowData*)glfwGetWindowUserPointer(window);
+
+            WindowCloseEvent event;
+            data.EventCallback(event);
+        });
+
+        glfwSetKeyCallback(m_Window, [](GLFWwindow* window, int key, int scancode, int action, int mods)
+        {
+            WindowData& data = *(WindowData*)glfwGetWindowUserPointer(window);
+
+            switch (action)
+            {
+                case GLFW_PRESS:
+                {
+                    KeyPressedEvent event(key, 0);
+                    data.EventCallback(event);
+                    break;
+                }
+                case GLFW_RELEASE:
+                {
+                    KeyReleasedEvent event(key);
+                    data.EventCallback(event);
+                    break;
+                }
+                case GLFW_REPEAT:
+                {
+                    KeyPressedEvent event(key, 1);
+                    data.EventCallback(event);
+                    break;
+                }
+            }
+        });
+
+        glfwSetMouseButtonCallback(m_Window, [](GLFWwindow* window, int button, int action, int mods)
+        {
+            WindowData& data = *(WindowData*)glfwGetWindowUserPointer(window);
+
+            switch (action)
+            {
+                case GLFW_PRESS:
+                {
+                    MouseButtonPressedEvent event(button);
+                    data.EventCallback(event);
+                    break;
+                }
+                case GLFW_RELEASE:
+                {
+                    MouseButtonReleasedEvent event(button);
+                    data.EventCallback(event);
+                    break;
+                }
+            }
+        });
+
+        glfwSetScrollCallback(m_Window, [](GLFWwindow* window, double xOffset, double yOffset)
+        {
+            WindowData& data = *(WindowData*)glfwGetWindowUserPointer(window);
+
+            MouseScrolledEvent event((float)xOffset, (float)yOffset);
+            data.EventCallback(event);
+        });
+
+        glfwSetCursorPosCallback(m_Window, [](GLFWwindow* window, double xPos, double yPos)
+        {
+            WindowData& data = *(WindowData*)glfwGetWindowUserPointer(window);
+
+            MouseMovedEvent event((float)xPos, (float)yPos);
+            data.EventCallback(event);
+        });
     }
 
     void WindowsWindow::Shutdown()
