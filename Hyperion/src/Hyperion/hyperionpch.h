@@ -19,12 +19,3 @@
 #ifdef HYPERION_PLATFORM_WINDOWS
     #include <Windows.h>
 #endif
-
-// Graphics loaders
-#if defined(HYPERION_RENDER_API_OpenGL)
-    #include <glad/glad.h>
-    #include <GLFW/glfw3.h>
-#elif defined(HYPERION_RENDER_API_Vulkan)
-    #include <volk.h>
-    #include <GLFW/glfw3.h>
-#endif

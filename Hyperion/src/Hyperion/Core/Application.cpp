@@ -1,4 +1,7 @@
 ﻿#include "Application.h"
+
+#include <GL/gl.h>
+
 #include "../Events/ApplicationEvent.h"
 #include "Log.h"
 #include "../Events/Event.h"
@@ -8,10 +11,11 @@
 namespace Hyperion
 {
     Application::Application()
-    = default;
+    {
+        m_Window = std::unique_ptr<Window>(Window::Create());
+    }
 
-    Application::~Application()
-    = default;
+    Application::~Application(){}
     
     void Application::Run()
     {
@@ -26,7 +30,12 @@ namespace Hyperion
         }
 
         HYPERION_TRACE("WindowResizeEvent: {}, {}", e.GetWidth(), e.GetHeight());
-        while (true);
+        while (m_Running)
+        {
+            glClearColor(1, 0, 1, 1);
+            glClear(GL_COLOR_BUFFER_BIT);
+            m_Window->OnUpdate();
+        }
     }
 
 

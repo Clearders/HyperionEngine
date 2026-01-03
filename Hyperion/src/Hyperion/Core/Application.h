@@ -1,6 +1,7 @@
 ﻿#pragma once
 
 #include "Core.h"
+#include "Window.h"
 
 namespace Hyperion
 {
@@ -10,7 +11,10 @@ namespace Hyperion
         Application();
         virtual ~Application();
 
-        static void Run();
+        void Run();
+        private:
+        std::unique_ptr<Window> m_Window;
+        bool m_Running = true;
         
         
     };

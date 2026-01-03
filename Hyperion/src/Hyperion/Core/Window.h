@@ -26,7 +26,7 @@ namespace Hyperion
     class HYPERION_API Window
     {
     public:
-        using EventCallback = std::function<void(Event&)>;
+        using EventCallbackFn = std::function<void(Event&)>;
 
         virtual ~Window() = default;
 
@@ -36,11 +36,12 @@ namespace Hyperion
         virtual unsigned int GetHeight() const = 0;
 
         // Window attributes
-        virtual void SetEventCallback(const EventCallback& callback) = 0;
+        virtual void SetEventCallback(const EventCallbackFn& callback) = 0;
         virtual void SetVSync(bool enabled) = 0;
         virtual bool IsVSync() const = 0;
 
-        static Window* Create(const std::string& title, unsigned int width, unsigned int height);
+
+        static Window* Create(const WindowProps& props = WindowProps());
     };
 } // Hyperion
 

@@ -16,8 +16,9 @@ find_package(glfw3 CONFIG)
 add_library(Hyperion SHARED
     ${HYPERION_SOURCES}
     ${HYPERION_HEADERS}
-        src/Hyperion/Core/Window.cpp
         src/Hyperion/Core/Window.h
+        src/Platform/Windows/WindowsWindow.cpp
+        src/Platform/Windows/WindowsWindow.h
 )
 
 target_compile_features(Hyperion PUBLIC cxx_std_17)

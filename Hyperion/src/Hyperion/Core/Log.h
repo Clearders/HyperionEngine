@@ -27,7 +27,7 @@ namespace Hyperion
 #define HYPERION_CORE_INFO(...)   ::Hyperion::Log::GetCoreLogger()->info(__VA_ARGS__)
 #define HYPERION_CORE_WARN(...)   ::Hyperion::Log::GetCoreLogger()->warn(__VA_ARGS__)
 #define HYPERION_CORE_ERROR(...)  ::Hyperion::Log::GetCoreLogger()->error(__VA_ARGS__)
-#define HYPERION_core_FATAL(...)  ::Hyperion::Log::GetClientLogger()->trace(__VA_ARGS__)
+#define HYPERION_CORE_FATAL(...)  ::Hyperion::Log::GetClientLogger()->trace(__VA_ARGS__)
 
 #define HYPERION_TRACE(...)       ::Hyperion::Log::GetClientLogger()->trace(__VA_ARGS__)
 #define HYPERION_INFO(...)        ::Hyperion::Log::GetClientLogger()->info(__VA_ARGS__)
