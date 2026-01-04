@@ -5,14 +5,14 @@
 
 #include "../../Hyperion/Core/Window.h"
 #include <string>
-#include <GLFW/glfw3.h>
-#include <GLFW/glfw3native.h>
+#include "glad/glad.h"
+#include "GLFW/glfw3.h"
 
 #ifndef HYPERIONENGINE_WINDOWSWINDOW_H
 #define HYPERIONENGINE_WINDOWSWINDOW_H
 
 
-
+struct GLFWwindow;
 
 
 namespace Hyperion

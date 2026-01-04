@@ -1,14 +1,24 @@
 #include "../Hyperion/src/Hyperion.h"
 
-namespace Hyperion
+class ExampleLayer : public Hyperion::Layer
 {
-    class Application;
-}
+public:
+    ExampleLayer() : Layer("Example") {}
+    void OnUpdate() override
+    {
+        HYPERION_TRACE("ExampleLayer::Update");
+    }
+    void OnEvent(Hyperion::Event& event) override
+    {
+        HYPERION_INFO("{}", event.ToString());
+    }
+};
 
 class Sandbox : public Hyperion::Application
 {
 public:
     Sandbox(){
+        PushLayer(new ExampleLayer);;
     }
     ~Sandbox(){
     }

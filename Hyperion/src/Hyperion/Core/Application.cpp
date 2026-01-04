@@ -7,6 +7,10 @@
 #include "Log.h"
 #include "../Events/Event.h"
 
+#include "Layer.h"
+#include "Window.h"
+#include "GLFW/glfw3.h"
+
 
 namespace Hyperion
 {
@@ -25,10 +29,35 @@ namespace Hyperion
         EventDispatcher dispatcher(event);
         dispatcher.Dispatch<WindowCloseEvent>(BIND_EVENT_FN(OnWindowClose));
 
-        HYPERION_CORE_TRACE("{}", event.ToString());
+        for (auto it = m_LayerStack.end(); it != m_LayerStack.begin(); )
+        {
+            (*--it)->OnEvent(event);
+            if (event.Handled)
+                break;
+        }
     }
 
-    
+    void Application::PushLayer(Layer* layer)
+    {
+        m_LayerStack.PushLayer(layer);
+        layer->OnAttach();
+    }
+
+    void Application::PopLayer(Layer* layer)
+    {
+    }
+
+    void Application::PushOverlay(Layer* layer)
+    {
+        m_LayerStack.PushOverlay(layer);
+        layer->OnAttach();
+    }
+
+    void Application::PopOverlay(Layer* overlay)
+    {
+    }
+
+
     void Application::Run()
     {
         WindowResizeEvent e(1280, 720);
@@ -46,6 +75,10 @@ namespace Hyperion
         {
             glClearColor(1, 0, 1, 1);
             glClear(GL_COLOR_BUFFER_BIT);
+
+            for (Layer* layer : m_LayerStack)
+                layer->OnUpdate();
+
             m_Window->OnUpdate();
         }
     }
