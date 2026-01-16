@@ -34,7 +34,7 @@ namespace Hyperion
 
     WindowsWindow::~WindowsWindow()
     {
-        Shutdown();
+        WindowsWindow::Shutdown();
     }
 
     void WindowsWindow::Init(const WindowProps& props)

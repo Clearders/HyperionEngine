@@ -5,6 +5,8 @@
 #include "Hyperion/hyperionpch.h"
 #include "Hyperion/Core/Core.h"
 #include <spdlog/spdlog.h>
+
+#include "Hyperion/ImGui/ImGuiLayer.h"
 //---------------Entry point---------------
 #include "Hyperion/Core/EntryPoint.h"
 //-----------------------------------------

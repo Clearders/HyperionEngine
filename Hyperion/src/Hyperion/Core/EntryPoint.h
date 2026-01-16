@@ -4,7 +4,7 @@
 #include "Log.h"
 extern Hyperion::Application* CreateApplication();
 
-    int main(int argc, char** argv)
+    int main(int argc, char** args)
     {
         Hyperion::Log::Init();
         HYPERION_CORE_WARN("Initialized Log!");

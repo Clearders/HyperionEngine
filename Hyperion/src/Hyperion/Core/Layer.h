@@ -4,8 +4,9 @@
 
 #pragma once
 
-#include "Hyperion/Core/Core.h"
-#include "Hyperion/Events/Event.h"
+// Use relative includes so the header resolves without requiring project include paths
+#include "Core.h"
+#include "../Events/Event.h"
 
 namespace Hyperion
 {
