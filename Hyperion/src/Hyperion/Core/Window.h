@@ -32,6 +32,8 @@ namespace Hyperion
 
         virtual void OnUpdate() = 0;
 
+        virtual void SetSize(unsigned int width, unsigned int height) = 0;
+
         virtual unsigned int GetWidth() const = 0;
         virtual unsigned int GetHeight() const = 0;
 

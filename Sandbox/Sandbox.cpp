@@ -7,12 +7,17 @@ public:
 
     void OnUpdate() override
     {
-        HYPERION_INFO("ExampleLayer::Update");
+        //HYPERION_INFO("ExampleLayer::Update");
+
+        if (Hyperion::Input::IsKeyPressed(HYPERION_KEY_TAB))
+        {
+            HYPERION_TRACE("Tab key is pressed!");
+        }
     }
 
     void OnEvent(Hyperion::Event& event) override
     {
-        HYPERION_INFO("{}", event.ToString());
+        //HYPERION_INFO("{}", event.ToString());
     }
 };
 

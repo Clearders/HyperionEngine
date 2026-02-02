@@ -75,6 +75,7 @@ namespace Hyperion
         {
             WindowData& data = *(WindowData*)glfwGetWindowUserPointer(window);
 
+
             WindowCloseEvent event;
             data.EventCallback(event);
         });
@@ -147,6 +148,13 @@ namespace Hyperion
     void WindowsWindow::Shutdown()
     {
         glfwDestroyWindow(m_Window);
+    }
+
+    void WindowsWindow::SetSize(unsigned int width, unsigned int height)
+    {
+        glfwSetWindowSize(m_Window, (int)width, (int)height);
+        m_Data.Width = width;
+        m_Data.Height = height;
     }
 
     void WindowsWindow::OnUpdate()

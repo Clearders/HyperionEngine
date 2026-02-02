@@ -11,6 +11,7 @@ namespace Hyperion
 {
     class HYPERION_API Application
     {
+
         public:
         Application();
         virtual ~Application();

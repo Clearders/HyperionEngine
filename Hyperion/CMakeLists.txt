@@ -45,7 +45,11 @@ target_link_libraries(imgui PUBLIC glfw OpenGL::GL glad)
 
 set(HYPERION_LIB_TYPE STATIC)
 if (HYPERION_BUILD_SHARED)
-    set(HYPERION_LIB_TYPE SHARED)
+    set(HYPERION_LIB_TYPE SHARED
+            src/Hyperion/Core/Input.h
+            src/Platform/Windows/WindowsInput.cpp
+            src/Platform/Windows/WindowsInput.h
+            src/Hyperion/Core/MouseButtonCodes.h)
 endif()
 
 add_library(Hyperion ${HYPERION_LIB_TYPE}

@@ -10,6 +10,7 @@
 #include "Layer.h"
 #include "Window.h"
 
+#include "Input.h"
 
 namespace Hyperion
 {
@@ -74,15 +75,21 @@ namespace Hyperion
             HYPERION_TRACE("WindowResizeEvent is in Input Category");
         }
 
+
+        int increament = 10;
         HYPERION_TRACE("WindowResizeEvent: {}, {}", e.GetWidth(), e.GetHeight());
         while (m_Running)
         {
             glClearColor(1, 0, 1, 1);
             glClear(GL_COLOR_BUFFER_BIT);
 
+
             for (Layer* layer : m_LayerStack)
                 layer->OnUpdate();
 
+            /*auto[x, y] = Input::GetMousePosition();
+            HYPERION_CORE_TRACE("Mouse Position: {}, {}", x, y);
+            */
             m_Window->OnUpdate();
         }
     }

@@ -2,6 +2,7 @@
 
 #include "../hyperionpch.h"
 #include "Event.h"
+#include "GLFW/glfw3.h"
 
 namespace Hyperion {
 
@@ -9,10 +10,22 @@ namespace Hyperion {
 	{
 	public:
 		WindowResizeEvent(unsigned int width, unsigned int height)
-			: m_Width(width), m_Height(height) {}
+			: m_Width(width), m_Height(height){}
 
 		unsigned int GetWidth() const { return m_Width; }
 		unsigned int GetHeight() const { return m_Height; }
+
+		unsigned int setWidth(int width)
+		{
+			m_Width = width;
+			return m_Width;
+		}
+
+		unsigned int setHeight(int height)
+		{
+			m_Height = height;
+			return m_Height;
+		}
 
 		std::string ToString() const override
 		{
