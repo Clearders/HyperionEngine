@@ -88,7 +88,7 @@ namespace Hyperion
             {
                 case GLFW_PRESS:
                 {
-                    KeyPressedEvent event(key, 0);
+                    KeyPressedEvent event(key,0);
                     data.EventCallback(event);
                     break;
                 }

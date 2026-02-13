@@ -83,4 +83,5 @@ target_link_libraries(Hyperion
         glad
         OpenGL::GL
         imgui
+        glm::glm
 )
