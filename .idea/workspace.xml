@@ -36,14 +36,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8dd5f59-e93d-40e7-9f52-abc8fb001637" name="更改" comment="ImGui">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hyperion/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Application.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Application.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hyperion/src/Platform/Windows/WindowsWindow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Platform/Windows/WindowsWindow.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sandbox/Sandbox.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Sandbox/Sandbox.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="c8dd5f59-e93d-40e7-9f52-abc8fb001637" name="更改" comment="ImGui" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -175,8 +168,8 @@
     <list>
       <item itemvalue="CMake 应用程序.Hyperion" />
       <item itemvalue="CMake 应用程序.Sandbox" />
-      <item itemvalue="CMake 应用程序.glad" />
       <item itemvalue="CMake 应用程序.glm" />
+      <item itemvalue="CMake 应用程序.glad" />
       <item itemvalue="CMake 应用程序.spdlog" />
     </list>
   </component>
@@ -252,7 +245,7 @@
       <workItem from="1770455919420" duration="3162000" />
       <workItem from="1770958415071" duration="296000" />
       <workItem from="1770958769175" duration="4581000" />
-      <workItem from="1770976421182" duration="12000" />
+      <workItem from="1770976421182" duration="313000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
