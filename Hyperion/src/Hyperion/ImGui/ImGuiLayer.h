@@ -6,7 +6,6 @@
 #include "../Core/Layer.h"
 #include "../Events/Event.h"
 
-#include "Hyperion/Core/Application.h"
 #include "Hyperion/Events/MouseEvent.h"
 #include "Hyperion/Events/KeyEvent.h"
 #include "Hyperion/Events/ApplicationEvent.h"
@@ -19,10 +18,12 @@ namespace Hyperion
         ImGuiLayer();
         ~ImGuiLayer();
 
-        void OnAttach();
-        void OnDetach();
-        void OnUpdate() ;
-        void OnEvent(Event& event) ;
+        virtual void OnAttach() override;
+        virtual void OnDetach() override;
+        virtual void OnImGuiRender() override;
+
+        void Begin();
+        void End();
 
     private:
         double m_Time = 0.0;

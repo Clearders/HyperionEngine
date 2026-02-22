@@ -7,6 +7,7 @@
     <option name="/Default/Environment/Hierarchy/GeneratedFilesCacheKey/Timestamp/@EntryValue" value="6" type="long" />
     <option name="/Default/Environment/UserInterface/HierarchyView/ViewStyle/@EntryValue" value="SuperTypes" type="string" />
     <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
+    <option name="/Default/RiderDebugger/RiderRestoreDecompile/RestoreDecompileSetting/@EntryValue" value="false" type="bool" />
   </component>
   <component name="CMakePresetLoader">{
   &quot;useNewFormat&quot;: true
@@ -36,7 +37,19 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8dd5f59-e93d-40e7-9f52-abc8fb001637" name="更改" comment="ImGui" />
+    <list default="true" id="c8dd5f59-e93d-40e7-9f52-abc8fb001637" name="更改" comment="ImGui and GLM">
+      <change afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/ImGui/ImGuiBuild.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Application.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Application.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Application.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Application.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/EntryPoint.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/EntryPoint.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Layer.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Layer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/ImGui/ImGuiLayer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/ImGui/ImGuiLayer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/ImGui/ImGuiLayer.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/ImGui/ImGuiLayer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sandbox/Sandbox.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Sandbox/Sandbox.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/imgui" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/imgui" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,11 +65,14 @@
   </component>
   <component name="CopilotUserSelectedModel">
     <selectedModels>
-      <entry key="inline" value="GPT-5 mini" />
+      <entry key="inline" value="Gemini 3 Pro (Preview)" />
       <entry key="edit-panel" value="GPT-5 mini" />
       <entry key="chat-panel" value="Gemini 3 Pro (Preview)" />
       <entry key="agent-panel" value="Gemini 3 Pro (Preview)" />
     </selectedModels>
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="2391" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileTemplateManagerImpl">
@@ -83,6 +99,11 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Application.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Layer.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Hyperion/src/Hyperion/ImGui/ImGuiLayer.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Hyperion/src/Hyperion/ImGui/ImGuiLayer.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Sandbox/Sandbox.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/vendor/imgui/examples/example_glfw_opengl3/main.cpp" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MacroExpansionManager">
@@ -129,7 +150,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;CPPToolchains&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -168,8 +189,8 @@
     <list>
       <item itemvalue="CMake 应用程序.Hyperion" />
       <item itemvalue="CMake 应用程序.Sandbox" />
-      <item itemvalue="CMake 应用程序.glm" />
       <item itemvalue="CMake 应用程序.glad" />
+      <item itemvalue="CMake 应用程序.glm" />
       <item itemvalue="CMake 应用程序.spdlog" />
     </list>
   </component>
@@ -245,7 +266,14 @@
       <workItem from="1770455919420" duration="3162000" />
       <workItem from="1770958415071" duration="296000" />
       <workItem from="1770958769175" duration="4581000" />
-      <workItem from="1770976421182" duration="313000" />
+      <workItem from="1770976421182" duration="3588000" />
+      <workItem from="1771077429365" duration="5630000" />
+      <workItem from="1771119365651" duration="48000" />
+      <workItem from="1771119923488" duration="1953000" />
+      <workItem from="1771143516449" duration="42000" />
+      <workItem from="1771648836217" duration="1081000" />
+      <workItem from="1771667811912" duration="1092000" />
+      <workItem from="1771759854740" duration="594000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
@@ -295,7 +323,23 @@
       <option name="project" value="LOCAL" />
       <updated>1768560712846</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="ImGui and GLM">
+      <option name="closed" value="true" />
+      <created>1770976763781</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1770976763781</updated>
+    </task>
+    <task id="LOCAL-00008" summary="ImGui and GLM">
+      <option name="closed" value="true" />
+      <created>1770976768426</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1770976768426</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,7 +367,8 @@
     <MESSAGE value="GLFW and WindowEvent&#10;realized" />
     <MESSAGE value="glad for modern OpenGL" />
     <MESSAGE value="ImGui" />
-    <option name="LAST_COMMIT_MESSAGE" value="ImGui" />
+    <MESSAGE value="ImGui and GLM" />
+    <option name="LAST_COMMIT_MESSAGE" value="ImGui and GLM" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

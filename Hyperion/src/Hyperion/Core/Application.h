@@ -3,9 +3,10 @@
 #include "Core.h"
 #include "Window.h"
 #include "LayerStack.h"
-// 将事件头的包含改为相对路径，保证在此目录下可找到
 #include "../Events/Event.h"
 #include "Hyperion/Events/ApplicationEvent.h"
+
+#include "Hyperion/ImGui/ImGuiLayer.h"
 
 namespace Hyperion
 {
@@ -32,6 +33,7 @@ namespace Hyperion
         bool OnWindowClose(WindowCloseEvent& event);
 
         std::unique_ptr<Window> m_Window;
+        ImGuiLayer* m_ImGuiLayer;
         bool m_Running = true;
         LayerStack m_LayerStack;
 

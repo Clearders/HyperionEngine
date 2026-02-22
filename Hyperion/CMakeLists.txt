@@ -49,7 +49,9 @@ if (HYPERION_BUILD_SHARED)
             src/Hyperion/Core/Input.h
             src/Platform/Windows/WindowsInput.cpp
             src/Platform/Windows/WindowsInput.h
-            src/Hyperion/Core/MouseButtonCodes.h)
+            src/Hyperion/Core/MouseButtonCodes.h
+            src/Hyperion/ImGui/ImGuiBuild.cpp
+    )
 endif()
 
 add_library(Hyperion ${HYPERION_LIB_TYPE}
