@@ -4,9 +4,13 @@
 #pragma once
 
 #include "../../Hyperion/Core/Window.h"
+
+#include "../../Hyperion/Renderer/GraphicsContext.h"
 #include <string>
-#include "glad/glad.h"
+
 #include "GLFW/glfw3.h"
+
+
 
 #ifndef HYPERIONENGINE_WINDOWSWINDOW_H
 #define HYPERIONENGINE_WINDOWSWINDOW_H
@@ -43,6 +47,7 @@ namespace Hyperion
 
     private:
         GLFWwindow* m_Window{};
+        GraphicsContext* m_Context{};
 
         struct WindowData
         {

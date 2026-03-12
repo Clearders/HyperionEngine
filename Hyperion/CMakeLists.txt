@@ -7,7 +7,8 @@ file(GLOB_RECURSE HYPERION_HEADERS CONFIGURE_DEPENDS src/*.h)
 
 set(GLAD_DIR "${CMAKE_SOURCE_DIR}/vendor/GLAD/src")
 if (EXISTS "${GLAD_DIR}/glad.c")
-    set(GLAD_SOURCES "${GLAD_DIR}/glad.c")
+    set(GLAD_SOURCES "${GLAD_DIR}/glad.c"
+    )
 else()
     file(GLOB_RECURSE GLAD_SOURCES CONFIGURE_DEPENDS "${GLAD_DIR}/*.c")
 endif()
@@ -51,6 +52,7 @@ if (HYPERION_BUILD_SHARED)
             src/Platform/Windows/WindowsInput.h
             src/Hyperion/Core/MouseButtonCodes.h
             src/Hyperion/ImGui/ImGuiBuild.cpp
+            src/Hyperion/Renderer/GraphicsContext.h
     )
 endif()
 
@@ -63,6 +65,9 @@ add_library(Hyperion ${HYPERION_LIB_TYPE}
         src/Hyperion/Core/KeyCodes.h
         src/Hyperion/Core/Layer.cpp
         src/Hyperion/Core/Layer.h
+        src/Hyperion/Renderer/GraphicsContext.cpp
+        src/Platform/OpenGL/OpenGLContext.cpp
+        src/Platform/OpenGL/OpenGLContext.h
 )
 
 target_compile_features(Hyperion PUBLIC cxx_std_17)
