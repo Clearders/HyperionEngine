@@ -9,6 +9,9 @@
 
 // 显式包含 glad 和 glfw 头文件，确保 OpenGL 函数和类型对于后端是可见的
 #include <glad/glad.h>
+#ifndef GLFW_INCLUDE_NONE
+#define GLFW_INCLUDE_NONE
+#endif
 #include <GLFW/glfw3.h>
 
 #include "imgui_impl_glfw.cpp"

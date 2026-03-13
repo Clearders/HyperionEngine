@@ -3,7 +3,10 @@
 //
 
 #include "WindowsInput.h"
-#include "../../Hyperion/hyperionpch.h"
+#ifndef GLFW_INCLUDE_NONE
+#define GLFW_INCLUDE_NONE
+#endif
+#include "GLFW/glfw3.h"
 #include "Hyperion/Core/Application.h"
 
 namespace Hyperion

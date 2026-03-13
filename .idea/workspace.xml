@@ -38,15 +38,16 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8dd5f59-e93d-40e7-9f52-abc8fb001637" name="更改" comment="ImGui window">
-      <change afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/GraphicsContext.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/GraphicsContext.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hyperion/src/Platform/OpenGL/OpenGLContext.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hyperion/src/Platform/OpenGL/OpenGLContext.h" afterDir="false" />
+    <list default="true" id="c8dd5f59-e93d-40e7-9f52-abc8fb001637" name="更改" comment="Renderer Context">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hyperion/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Application.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Application.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Layer.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Layer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Application.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Application.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Events/ApplicationEvent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Events/ApplicationEvent.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/ImGui/ImGuiBuild.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/ImGui/ImGuiBuild.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/ImGui/ImGuiLayer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/ImGui/ImGuiLayer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Platform/OpenGL/OpenGLContext.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Platform/OpenGL/OpenGLContext.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Platform/OpenGL/OpenGLContext.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Platform/OpenGL/OpenGLContext.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Platform/Windows/WindowsInput.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Platform/Windows/WindowsInput.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hyperion/src/Platform/Windows/WindowsWindow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Platform/Windows/WindowsWindow.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hyperion/src/Platform/Windows/WindowsWindow.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Platform/Windows/WindowsWindow.h" afterDir="false" />
     </list>
@@ -63,12 +64,15 @@
       <entry key="_C:/Users/13191/RiderProjects/Hyperion Engine" value="37KbkXkBXmI1BD7HN9UGiC3RsSe" />
     </persistenceIdMap>
   </component>
+  <component name="CopilotUserSelectedChatMode">
+    <option name="chatModeId" value="Agent" />
+  </component>
   <component name="CopilotUserSelectedModel">
     <selectedModels>
       <entry key="inline" value="GPT-5.4" />
       <entry key="edit-panel" value="GPT-5 mini" />
-      <entry key="chat-panel" value="GPT-5.4" />
-      <entry key="agent-panel" value="GPT-5.4" />
+      <entry key="chat-panel" value="GPT-5.3-Codex" />
+      <entry key="agent-panel" value="GPT-5.3-Codex" />
     </selectedModels>
   </component>
   <component name="EmbeddingIndexingInfo">
@@ -291,7 +295,9 @@
       <workItem from="1773222019935" duration="662000" />
       <workItem from="1773223670542" duration="1397000" />
       <workItem from="1773238294620" duration="2922000" />
-      <workItem from="1773308725067" duration="12000" />
+      <workItem from="1773308725067" duration="3352000" />
+      <workItem from="1773377108023" duration="758000" />
+      <workItem from="1773377887886" duration="9000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
@@ -365,7 +371,15 @@
       <option name="project" value="LOCAL" />
       <updated>1771760490961</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Renderer Context">
+      <option name="closed" value="true" />
+      <created>1773308774539</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1773308774539</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -395,7 +409,8 @@
     <MESSAGE value="ImGui" />
     <MESSAGE value="ImGui and GLM" />
     <MESSAGE value="ImGui window" />
-    <option name="LAST_COMMIT_MESSAGE" value="ImGui window" />
+    <MESSAGE value="Renderer Context" />
+    <option name="LAST_COMMIT_MESSAGE" value="Renderer Context" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

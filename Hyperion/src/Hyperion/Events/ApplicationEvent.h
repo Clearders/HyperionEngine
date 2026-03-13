@@ -2,7 +2,6 @@
 
 #include "../hyperionpch.h"
 #include "Event.h"
-#include "GLFW/glfw3.h"
 
 namespace Hyperion {
 

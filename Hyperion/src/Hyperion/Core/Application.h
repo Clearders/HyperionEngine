@@ -12,8 +12,7 @@ namespace Hyperion
 {
     class HYPERION_API Application
     {
-
-        public:
+    public:
         Application();
         virtual ~Application();
 
@@ -29,13 +28,17 @@ namespace Hyperion
 
         inline static Application& Get() { return *m_Instance; }
         inline Window& GetWindow() { return *m_Window;}
-        private:
+
+
+    private:
         bool OnWindowClose(WindowCloseEvent& event);
 
         std::unique_ptr<Window> m_Window;
         ImGuiLayer* m_ImGuiLayer;
         bool m_Running = true;
         LayerStack m_LayerStack;
+
+        unsigned int m_VertexArrayID, m_VertexBufferID, m_IndexBufferID;
 
         static Application* m_Instance;
         

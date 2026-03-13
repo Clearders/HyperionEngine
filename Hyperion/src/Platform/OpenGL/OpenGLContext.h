@@ -4,11 +4,9 @@
 
 #ifndef HYPERIONENGINE_OPENGLCONTEXT_H
 #define HYPERIONENGINE_OPENGLCONTEXT_H
-#include "Hyperion/Renderer/GraphicsContext.h"
 #include "../../Hyperion/Renderer/GraphicsContext.h"
-#include "GLFW/glfw3.h"
 
-struct GLFWWindow;
+struct GLFWwindow;
 
 namespace Hyperion
 {
