@@ -46,7 +46,7 @@ namespace Hyperion
         glEnableVertexAttribArray(0);
         glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
 
-        unsigned int indices[3] = { 0, 1, 2 };
+        uint32_t indices[3] = { 0, 1, 2 };
         m_IndexBuffer.reset(IndexBuffer::Create(indices, sizeof(indices) / sizeof(uint32_t)));
 
 
