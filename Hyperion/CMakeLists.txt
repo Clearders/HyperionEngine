@@ -53,6 +53,14 @@ if (HYPERION_BUILD_SHARED)
             src/Hyperion/Core/MouseButtonCodes.h
             src/Hyperion/ImGui/ImGuiBuild.cpp
             src/Hyperion/Renderer/GraphicsContext.h
+            src/Hyperion/Renderer/Shader.cpp
+            src/Hyperion/Renderer/Shader.h
+            src/Hyperion/Renderer/Buffer.h
+            src/Hyperion/Renderer/Buffer.cpp
+            src/Hyperion/Renderer/OpenGLBuffer.cpp
+            src/Hyperion/Renderer/OpenGLBuffer.h
+            src/Hyperion/Renderer/Renderer.cpp
+            src/Hyperion/Renderer/Renderer.h
     )
 endif()
 

@@ -17,3 +17,24 @@ set_target_properties(Sandbox PROPERTIES
     LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin
     ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin
 )
+
+if (MINGW)
+    get_filename_component(MINGW_BIN_DIR ${CMAKE_CXX_COMPILER} DIRECTORY)
+
+    set(MINGW_RUNTIME_DLLS
+        "libwinpthread-1.dll"
+        "libstdc++-6.dll"
+        "libgcc_s_seh-1.dll"
+    )
+
+    foreach(DLL_NAME ${MINGW_RUNTIME_DLLS})
+        if (EXISTS "${MINGW_BIN_DIR}/${DLL_NAME}")
+            add_custom_command(TARGET Sandbox POST_BUILD
+                COMMAND ${CMAKE_COMMAND} -E copy_if_different
+                "${MINGW_BIN_DIR}/${DLL_NAME}"
+                $<TARGET_FILE_DIR:Sandbox>
+                COMMENT "Copying ${DLL_NAME} to output directory"
+            )
+        endif()
+    endforeach()
+endif()

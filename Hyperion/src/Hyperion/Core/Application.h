@@ -1,5 +1,7 @@
 ﻿#pragma once
 
+#include <map>
+
 #include "Core.h"
 #include "Window.h"
 #include "LayerStack.h"
@@ -7,6 +9,9 @@
 #include "Hyperion/Events/ApplicationEvent.h"
 
 #include "Hyperion/ImGui/ImGuiLayer.h"
+#include "Hyperion/Renderer/Buffer.h"
+
+#include "Hyperion/Renderer/Shader.h"
 
 namespace Hyperion
 {
@@ -38,7 +43,11 @@ namespace Hyperion
         bool m_Running = true;
         LayerStack m_LayerStack;
 
-        unsigned int m_VertexArrayID, m_VertexBufferID, m_IndexBufferID;
+        unsigned int m_VertexArrayID;
+        std::unique_ptr<Shader> m_Shader;
+        std::unique_ptr<VertexBuffer> m_VertexBuffer;
+        std::unique_ptr<IndexBuffer> m_IndexBuffer;
+
 
         static Application* m_Instance;
         
