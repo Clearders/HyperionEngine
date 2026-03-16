@@ -38,10 +38,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8dd5f59-e93d-40e7-9f52-abc8fb001637" name="更改" comment="An error happen">
+    <list default="true" id="c8dd5f59-e93d-40e7-9f52-abc8fb001637" name="更改" comment="An error happened and fixed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Application.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Application.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/OpenGLBuffer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/OpenGLBuffer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/Buffer.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/Buffer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/OpenGLBuffer.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/OpenGLBuffer.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +55,7 @@
   <component name="CopilotPersistence">
     <persistenceIdMap>
       <entry key="_C:/Users/13191/RiderProjects/Hyperion Engine" value="37KbkXkBXmI1BD7HN9UGiC3RsSe" />
+      <entry key="_C:/Users/13191/RiderProjects/Hyperion Engine/.idea" value="3B0pCIsCqx43M6kPh2JL6vF4ddi" />
     </persistenceIdMap>
   </component>
   <component name="CopilotUserSelectedChatMode">
@@ -302,7 +304,9 @@
       <workItem from="1773460337762" duration="13083000" />
       <workItem from="1773546879686" duration="606000" />
       <workItem from="1773562195452" duration="15045000" />
-      <workItem from="1773589733872" duration="10000" />
+      <workItem from="1773589733872" duration="26000" />
+      <workItem from="1773635708998" duration="7625000" />
+      <workItem from="1773668645533" duration="10000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
@@ -400,7 +404,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773589241338</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="An error happened and fixed">
+      <option name="closed" value="true" />
+      <created>1773589749281</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1773589749281</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -433,7 +445,8 @@
     <MESSAGE value="Renderer Context" />
     <MESSAGE value="Renderer" />
     <MESSAGE value="An error happen" />
-    <option name="LAST_COMMIT_MESSAGE" value="An error happen" />
+    <MESSAGE value="An error happened and fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="An error happened and fixed" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
