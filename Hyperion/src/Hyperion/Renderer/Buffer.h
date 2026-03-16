@@ -76,8 +76,9 @@ namespace Hyperion
 
 
 
-    class BufferLayout
+    class HYPERION_API BufferLayout
     {
+    public:
     public:
         BufferLayout() = default;
 
@@ -115,7 +116,7 @@ namespace Hyperion
         uint32_t m_Stride = 0;
     };
 
-    class VertexBuffer
+    class HYPERION_API VertexBuffer
     {
     public:
         virtual ~VertexBuffer() = default;
@@ -129,7 +130,7 @@ namespace Hyperion
         static VertexBuffer* Create(float* vertices, uint32_t size);
     };
 
-    class IndexBuffer
+    class HYPERION_API IndexBuffer
     {
     public:
         virtual ~IndexBuffer() = default;

@@ -9,9 +9,10 @@
 #include "Hyperion/Events/ApplicationEvent.h"
 
 #include "Hyperion/ImGui/ImGuiLayer.h"
-#include "Hyperion/Renderer/Buffer.h"
 
 #include "Hyperion/Renderer/Shader.h"
+#include "Hyperion/Renderer/Buffer.h"
+#include "Hyperion/Renderer/VertexArray.h"
 
 namespace Hyperion
 {
@@ -43,11 +44,12 @@ namespace Hyperion
         bool m_Running = true;
         LayerStack m_LayerStack;
 
-        unsigned int m_VertexArrayID;
-        std::unique_ptr<Shader> m_Shader;
-        std::unique_ptr<VertexBuffer> m_VertexBuffer;
-        std::unique_ptr<IndexBuffer> m_IndexBuffer;
+        std::shared_ptr<Shader> m_Shader;
+        std::shared_ptr<VertexArray> m_VertexArray;
+        std::shared_ptr<VertexBuffer> m_VertexBuffer;
+        std::shared_ptr<IndexBuffer> m_IndexBuffer;
 
+        std::shared_ptr<VertexArray> m_SquareVertexArray;
 
         static Application* m_Instance;
         
