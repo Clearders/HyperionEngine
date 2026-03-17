@@ -12,7 +12,7 @@ namespace Hyperion
     class Renderer
     {
         public:
-        static void BeginScene(); //TODO
+        static void BeginScene();
         static void EndScene();
 
         static void Submit(const std::shared_ptr<VertexArray>& vertexArray);
