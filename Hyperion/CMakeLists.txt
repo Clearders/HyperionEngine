@@ -65,6 +65,12 @@ if (HYPERION_BUILD_SHARED)
             src/Hyperion/Renderer/VertexArray.h
             src/Platform/OpenGL/OpenGLVertexArray.cpp
             src/Platform/OpenGL/OpenGLVertexArray.h
+            src/Hyperion/Renderer/RendererAPI.cpp
+            src/Hyperion/Renderer/RendererAPI.h
+            src/Hyperion/Renderer/RenderCommand.cpp
+            src/Hyperion/Renderer/RenderCommand.h
+            src/Platform/OpenGL/OpenGLRendererAPI.cpp
+            src/Platform/OpenGL/OpenGLRendererAPI.h
     )
 endif()
 

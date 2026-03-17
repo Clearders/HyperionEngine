@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="/RendererAPI (snapshot).h">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="/RendererAPI (snapshot).h" />
+              <option name="originalContent" value="//&#10;// Created by 13191 on 2026/3/17.&#10;//&#10;&#10;#ifndef HYPERIONENGINE_RENDERERAPI_H&#10;#define HYPERIONENGINE_RENDERERAPI_H&#10;&#10;#include &lt;glm/glm.hpp&gt;&#10;#include &quot;VertexArray.h&quot;&#10;&#10;namespace Hyperion&#10;{&#10;    class RendererAPI&#10;    {&#10;    public:&#10;        enum class API&#10;        {&#10;            None = 0,OpenGL = 1,&#10;        };&#10;    public:&#10;        virtual ~RendererAPI() = default;&#10;&#10;        //virtual void Init() = 0;&#10;        //virtual void SetViewport(uint32_t x, uint32_t y, uint32_t width, uint32_t height) = 0;&#10;&#10;        virtual void SetClearColor(const glm::vec4&amp; color) = 0;&#10;        virtual void Clear() = 0;&#10;&#10;        virtual void DrawIndexed(const std::shared_ptr&lt;VertexArray&gt;&amp; vertexArray);&#10;&#10;        inline static API GetAPI() { return s_API; }&#10;private:&#10;        static API s_API;&#10;    };&#10;} // Hyperion&#10;&#10;#endif //HYPERIONENGINE_RENDERERAPI_H" />
+              <option name="updatedContent" value="//&#10;// Created by 13191 on 2026/3/17.&#10;//&#10;&#10;#ifndef HYPERIONENGINE_RENDERERAPI_H&#10;#define HYPERIONENGINE_RENDERERAPI_H&#10;&#10;#include &lt;glm/glm.hpp&gt;&#10;#include &quot;VertexArray.h&quot;&#10;&#10;namespace Hyperion&#10;{&#10;    class RendererAPI&#10;    {&#10;    public:&#10;        enum class API&#10;        {&#10;            None = 0,OpenGL = 1,&#10;        };&#10;    public:&#10;        virtual ~RendererAPI() = default;&#10;&#10;        //virtual void Init() = 0;&#10;        //virtual void SetViewport(uint32_t x, uint32_t y, uint32_t width, uint32_t height) = 0;&#10;&#10;        virtual void SetClearColor(const glm::vec4&amp; color) = 0;&#10;        virtual void Clear() = 0;&#10;&#10;        virtual void DrawIndexed(const std::shared_ptr&lt;VertexArray&gt;&amp; vertexArray) = 0;&#10;&#10;        inline static API GetAPI() { return s_API; }&#10;private:&#10;        static API s_API;&#10;    };&#10;} // Hyperion&#10;&#10;#endif //HYPERIONENGINE_RENDERERAPI_H" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

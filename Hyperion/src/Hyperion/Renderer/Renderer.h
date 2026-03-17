@@ -5,21 +5,22 @@
 #ifndef HYPERIONENGINE_RENDERER_H
 #define HYPERIONENGINE_RENDERER_H
 
+#include "Hyperion\Renderer\RenderCommand.h"
+
 namespace Hyperion
 {
-    enum class RendererAPI
-    {
-        None = 0,OpenGL = 1
-    };
     class Renderer
     {
         public:
-        inline static RendererAPI GetRendererAPI()
+        static void BeginScene(); //TODO
+        static void EndScene();
+
+        static void Submit(const std::shared_ptr<VertexArray>& vertexArray);
+
+        inline static RendererAPI::API GetAPI()
         {
-            return RendererAPI::OpenGL;
+            return RendererAPI::GetAPI();
         }
-        private:
-        static RendererAPI s_RendererAPI;
     };
 } // Hyperion
 
