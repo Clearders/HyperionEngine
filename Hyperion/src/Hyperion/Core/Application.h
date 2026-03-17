@@ -46,9 +46,8 @@ namespace Hyperion
 
         std::shared_ptr<Shader> m_Shader;
         std::shared_ptr<VertexArray> m_VertexArray;
-        std::shared_ptr<VertexBuffer> m_VertexBuffer;
-        std::shared_ptr<IndexBuffer> m_IndexBuffer;
 
+        std::shared_ptr<Shader> m_BlueShader;
         std::shared_ptr<VertexArray> m_SquareVertexArray;
 
         static Application* m_Instance;

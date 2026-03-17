@@ -39,13 +39,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8dd5f59-e93d-40e7-9f52-abc8fb001637" name="更改" comment="Layout">
-      <change afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/VertexArray.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/VertexArray.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hyperion/src/Platform/OpenGL/OpenGLVertexArray.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hyperion/src/Platform/OpenGL/OpenGLVertexArray.h" afterDir="false" />
+    <list default="true" id="c8dd5f59-e93d-40e7-9f52-abc8fb001637" name="更改" comment="Wait to update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hyperion/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Application.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Application.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Application.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Application.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/Buffer.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/Buffer.h" afterDir="false" />
@@ -76,7 +71,7 @@
     </selectedModels>
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="2403" />
+    <option name="cachedIndexableFilesCount" value="2407" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileTemplateManagerImpl">
@@ -139,32 +134,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "C/C++ 文件.main.cpp.executor": "Run",
-    "CMake 应用程序.Sandbox.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.RadMigrateCodeStyle": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "RunOnceActivity.west.config.association.type.startup.service": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/13191/RiderProjects/Hyperion Engine",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;C/C++ 文件.main.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;CMake 应用程序.Sandbox.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.RadMigrateCodeStyle&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.west.config.association.type.startup.service&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/13191/RiderProjects/Hyperion Engine&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\13191\RiderProjects\Hyperion Engine" />
@@ -172,9 +167,9 @@
     </key>
   </component>
   <component name="RunManager" selected="CMake 应用程序.Sandbox">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="Hyperion" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="HyperionEngine" TARGET_NAME="Hyperion" CONFIG_NAME="Debug">
@@ -317,7 +312,8 @@
       <workItem from="1773562195452" duration="15045000" />
       <workItem from="1773589733872" duration="26000" />
       <workItem from="1773635708998" duration="7625000" />
-      <workItem from="1773668645533" duration="6420000" />
+      <workItem from="1773668645533" duration="6433000" />
+      <workItem from="1773739338872" duration="4226000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
@@ -431,7 +427,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773668743564</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Wait to update">
+      <option name="closed" value="true" />
+      <created>1773675944094</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1773675944094</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -466,7 +470,8 @@
     <MESSAGE value="An error happen" />
     <MESSAGE value="An error happened and fixed" />
     <MESSAGE value="Layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="Layout" />
+    <MESSAGE value="Wait to update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Wait to update" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
