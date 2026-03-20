@@ -71,6 +71,8 @@ if (HYPERION_BUILD_SHARED)
             src/Hyperion/Renderer/RenderCommand.h
             src/Platform/OpenGL/OpenGLRendererAPI.cpp
             src/Platform/OpenGL/OpenGLRendererAPI.h
+            src/Hyperion/Renderer/OrthographicCamera.cpp
+            src/Hyperion/Renderer/OrthographicCamera.h
     )
 endif()
 

@@ -40,20 +40,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8dd5f59-e93d-40e7-9f52-abc8fb001637" name="更改" comment="Render Streaming">
-      <change afterPath="$PROJECT_DIR$/.idea/copilotDiffState.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/RenderCommand.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/RenderCommand.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/RendererAPI.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/RendererAPI.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hyperion/src/Platform/OpenGL/OpenGLRendererAPI.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hyperion/src/Platform/OpenGL/OpenGLRendererAPI.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/OrthographicCamera.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/OrthographicCamera.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hyperion/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Application.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Application.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/Buffer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/Buffer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Application.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Application.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/Renderer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/Renderer.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/Renderer.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/Renderer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/VertexArray.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/VertexArray.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/RendererAPI.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/RendererAPI.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/RendererAPI.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/RendererAPI.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/Shader.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/Shader.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/Shader.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/Shader.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,8 +74,8 @@
     <selectedModels>
       <entry key="inline" value="GPT-5.4" />
       <entry key="edit-panel" value="GPT-5 mini" />
-      <entry key="chat-panel" value="Gemini 3 Pro (Preview)" />
-      <entry key="agent-panel" value="Gemini 3 Pro (Preview)" />
+      <entry key="chat-panel" value="GPT-5.3-Codex" />
+      <entry key="agent-panel" value="GPT-5.3-Codex" />
     </selectedModels>
   </component>
   <component name="EmbeddingIndexingInfo">
@@ -178,6 +176,11 @@
     </key>
   </component>
   <component name="RunManager" selected="CMake 应用程序.Sandbox">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Hyperion" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="HyperionEngine" TARGET_NAME="Hyperion" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -321,7 +324,11 @@
       <workItem from="1773668645533" duration="6433000" />
       <workItem from="1773739338872" duration="9946000" />
       <workItem from="1773754339464" duration="36000" />
-      <workItem from="1773754387817" duration="12000" />
+      <workItem from="1773754387817" duration="172000" />
+      <workItem from="1773827764782" duration="1563000" />
+      <workItem from="1773842757354" duration="1211000" />
+      <workItem from="1773922064912" duration="110000" />
+      <workItem from="1774009097093" duration="9400000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
@@ -451,7 +458,23 @@
       <option name="project" value="LOCAL" />
       <updated>1773745926989</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Render Streaming">
+      <option name="closed" value="true" />
+      <created>1773754466267</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1773754466267</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Render Streaming">
+      <option name="closed" value="true" />
+      <created>1773754481558</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1773754481558</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

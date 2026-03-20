@@ -13,6 +13,7 @@
 #include "glm/glm.hpp"
 #include "Hyperion/Renderer/Renderer.h"
 
+
 namespace Hyperion
 {
 #define BIND_EVENT_FN(x) std::bind(&Application::x, this, std::placeholders::_1)
@@ -20,6 +21,7 @@ namespace Hyperion
     Application* Application::m_Instance = nullptr;
 
     Application::Application()
+        : m_Camera(-1.6f, 1.6f, -0.9f, 0.9f)
     {
         HYPERION_ASSERT(m_Instance == nullptr, "Application already initialized");
         m_Instance = this;
@@ -33,9 +35,9 @@ namespace Hyperion
         m_VertexArray.reset(VertexArray::Create());
 
         float vertices[3 * 7] = {
-            -0.5f, -0.5f, 0.0f, 0.8f, 0.2f, 0.8f, 1.0f,
-             0.5f, -0.5f, 0.0f, 0.2f, 0.3f, 0.8f, 1.0f,
-             0.0f,  0.5f, 0.0f, 0.8f, 0.8f, 0.2f, 1.0f
+            -0.5f, -0.5f, 0.1f, 0.8f, 0.2f, 0.8f, 1.0f,
+             0.5f, -0.5f, 0.1f, 0.2f, 0.3f, 0.8f, 1.0f,
+             0.0f,  0.5f, 0.1f, 0.8f, 0.8f, 0.2f, 1.0f
         };
 
         std::shared_ptr<VertexBuffer> vertexBuffer;
@@ -83,6 +85,8 @@ namespace Hyperion
             layout(location = 0) in vec3 a_Position;
             layout(location = 1) in vec4 a_Color;
 
+            uniform mat4 u_ViewProjection;
+
             out vec3 v_Position;
             out vec4 v_Color;
 
@@ -91,7 +95,7 @@ namespace Hyperion
             {
                 v_Position = a_Position;
                 v_Color = a_Color;
-                gl_Position = vec4(a_Position, 1.0);
+                gl_Position = u_ViewProjection * vec4(a_Position, 1.0);
             }
         )";
 
@@ -105,7 +109,6 @@ namespace Hyperion
 
             void main()
             {
-                color = vec4(v_Position*0.5+0.5,1.0);
                 color = v_Color;
             }
         )";
@@ -117,12 +120,14 @@ namespace Hyperion
 
             layout(location = 0) in vec3 a_Position;
 
+            uniform mat4 u_ViewProjection;
+
             out vec3 v_Position;
 
             void main()
             {
                 v_Position = a_Position;
-                gl_Position = vec4(a_Position, 1.0);
+                gl_Position = u_ViewProjection * vec4(a_Position, 1.0);
             }
         )";
 
@@ -202,14 +207,15 @@ namespace Hyperion
             RenderCommand::SetClearColor({0.1f, 0.1f, 0.1f, 1});
             RenderCommand::Clear();
 
-            Renderer::BeginScene();
-            {
-                m_BlueShader->Bind();
-                Renderer::Submit(m_SquareVertexArray);
+            m_Camera.SetPosition({0.5f, 0.5f, 0.0f});
+            m_Camera.SetRotation(45.0f);
 
-                m_Shader->Bind();
-                Renderer::Submit(m_VertexArray);
-            }
+            Renderer::BeginScene(m_Camera);
+
+
+            Renderer::Submit(m_BlueShader, m_SquareVertexArray);
+            Renderer::Submit(m_Shader, m_VertexArray);
+
 
             Renderer::EndScene();
 

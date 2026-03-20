@@ -12,6 +12,7 @@
 
 #include "Hyperion/Renderer/Shader.h"
 #include "Hyperion/Renderer/Buffer.h"
+#include "Hyperion/Renderer/OrthographicCamera.h"
 #include "Hyperion/Renderer/VertexArray.h"
 
 namespace Hyperion
@@ -44,11 +45,13 @@ namespace Hyperion
         bool m_Running = true;
         LayerStack m_LayerStack;
 
-        std::shared_ptr<Shader> m_Shader;
         std::shared_ptr<VertexArray> m_VertexArray;
+        std::shared_ptr<Shader> m_Shader;
 
-        std::shared_ptr<Shader> m_BlueShader;
         std::shared_ptr<VertexArray> m_SquareVertexArray;
+        std::shared_ptr<Shader> m_BlueShader;
+
+        OrthographicCamera m_Camera;
 
         static Application* m_Instance;
         

@@ -1,0 +1,61 @@
+//
+// Created by 13191 on 2026/3/20.
+//
+
+#ifndef HYPERIONENGINE_ORTHOGRAPHICCAMERA_H
+#define HYPERIONENGINE_ORTHOGRAPHICCAMERA_H
+
+#include <glm/glm.hpp>
+
+namespace Hyperion
+{
+    class OrthographicCamera
+    {
+
+    public:
+        OrthographicCamera(float left, float right, float bottom, float top);
+
+        const glm::vec3& GetPosition() const{
+            return m_Position;
+        };
+        void SetPosition(glm::vec3 position){
+            m_Position = position;
+            RecalculateViewMatrix();
+        };
+
+        float GetRotation() const
+        {
+            return m_Rotation;
+        }
+        void SetRotation(float rotation)
+        {
+            m_Rotation = rotation;
+            RecalculateViewMatrix();
+        };
+
+
+        const glm::mat4& GetProjectionMatrix() const {
+            return m_ProjectionMatrix;
+        }
+        const glm::mat4& GetViewMatrix() const {
+            return m_ViewMatrix;
+        }
+        const glm::mat4& GetViewProjectionMatrix() const {
+            return m_ViewProjectionMatrix;
+        }
+
+    private:
+        void RecalculateViewMatrix();
+
+    private:
+        glm::mat4 m_ProjectionMatrix;
+        glm::mat4 m_ViewMatrix;
+        glm::mat4 m_ViewProjectionMatrix;
+        glm::mat4 m_ModelMatrix;
+
+        glm::vec3 m_Position = {0.0f, 0.0f, 0.0f};
+        float m_Rotation = 0.0f;
+    };
+} // Hyperion
+
+#endif //HYPERIONENGINE_ORTHOGRAPHICCAMERA_H
