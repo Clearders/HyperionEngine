@@ -16,6 +16,7 @@ namespace Hyperion
         {
             s_RendererAPI->SetClearColor(color);
         };
+
         inline static void Clear()
         {
             s_RendererAPI->Clear();

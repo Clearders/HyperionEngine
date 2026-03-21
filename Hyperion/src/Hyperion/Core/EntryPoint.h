@@ -4,16 +4,16 @@
 #include "Log.h"
 extern Hyperion::Application* CreateApplication();
 
-    int main(int /*argc*/, char** /*args*/)
-    {
-        Hyperion::Log::Init();
-        HYPERION_CORE_WARN("Initialized Log!");
-        HYPERION_INFO("Hello!");
-        
-        printf("Hyperion Engine\n");
-        auto app = CreateApplication();
-        app->Run();
-        delete app;
-        return 0;
-    }
+int main(int /*argc*/, char** /*args*/)
+{
+    Hyperion::Log::Init();
+    HYPERION_CORE_WARN("Initialized Log!");
+    HYPERION_INFO("Hello!");
+
+    printf("Hyperion Engine\n");
+    auto app = CreateApplication();
+    app->Run();
+    delete app;
+    return 0;
+}
 #endif

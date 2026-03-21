@@ -9,5 +9,4 @@ namespace Hyperion
     RendererAPI::API RendererAPI::s_API = RendererAPI::API::OpenGL;
 
     RendererAPI::~RendererAPI() = default;
-
 } // Hyperion

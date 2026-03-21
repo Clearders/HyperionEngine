@@ -15,7 +15,6 @@ namespace Hyperion
 
     bool WindowsInput::IsKeyPressedImpl(int keycode)
     {
-
         auto window = static_cast<GLFWwindow*>(Application::Get().GetWindow().GetNativeWindow());
         auto state = glfwGetKey(window, keycode);
         return state == GLFW_PRESS || state == GLFW_REPEAT;
@@ -44,14 +43,13 @@ namespace Hyperion
 
     float WindowsInput::GetMouseXImpl()
     {
-        auto[x,y] = GetMousePositionImpl();
+        auto [x,y] = GetMousePositionImpl();
         return x;
     }
 
     float WindowsInput::GetMouseYImpl()
     {
-        auto[x,y] = GetMousePositionImpl();
+        auto [x,y] = GetMousePositionImpl();
         return y;
     }
 }
-

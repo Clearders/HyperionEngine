@@ -20,13 +20,13 @@ namespace Hyperion
         virtual void AddVertexBuffer(const std::shared_ptr<VertexBuffer>& vertexBuffer) override;
         virtual void SetIndexBuffer(const std::shared_ptr<IndexBuffer>& indexBuffer) override;
 
-        virtual std::vector<std::shared_ptr<VertexBuffer>>& GetVertexBuffers() { return m_VertexBuffers;};
+        virtual std::vector<std::shared_ptr<VertexBuffer>>& GetVertexBuffers() { return m_VertexBuffers; };
         virtual std::shared_ptr<IndexBuffer>& GetIndexBuffer() { return m_IndexBuffers; };
+
     private:
         uint32_t m_RendererID;
         std::vector<std::shared_ptr<VertexBuffer>> m_VertexBuffers;
         std::shared_ptr<IndexBuffer> m_IndexBuffers;
-
     };
 } // Hyperion
 

@@ -21,12 +21,14 @@ namespace Hyperion
                     unsigned int width = 1280,
                     unsigned int height = 720)
             : Title(title), Width(width), Height(height)
-        {}
+        {
+        }
     };
+
     class HYPERION_API Window
     {
     public:
-        using EventCallbackFn = std::function<void(Event&)>;
+        using EventCallbackFn = std::function<void(Event &)>;
 
         virtual ~Window() = default;
 

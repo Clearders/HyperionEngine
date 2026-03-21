@@ -16,19 +16,23 @@ namespace Hyperion
         {
             return m_instance->IsKeyPressedImpl(keycode);
         };
+
         inline static bool IsMouseButtonPressed(int button)
         {
             return m_instance->IsMouseButtonPressedImpl(button);
         };
+
         inline static std::pair<float, float> GetMousePosition()
         {
             return m_instance->GetMousePositionImpl();
         }
+
         static float GetMouseX()
         {
             auto [x, y] = m_instance->GetMousePositionImpl();
             return x;
         };
+
         static float GetMouseY()
         {
             auto [x, y] = m_instance->GetMousePositionImpl();

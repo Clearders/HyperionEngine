@@ -11,14 +11,16 @@ namespace Hyperion
 {
     class OrthographicCamera
     {
-
     public:
         OrthographicCamera(float left, float right, float bottom, float top);
 
-        const glm::vec3& GetPosition() const{
+        const glm::vec3& GetPosition() const
+        {
             return m_Position;
         };
-        void SetPosition(glm::vec3 position){
+
+        void SetPosition(glm::vec3 position)
+        {
             m_Position = position;
             RecalculateViewMatrix();
         };
@@ -27,6 +29,7 @@ namespace Hyperion
         {
             return m_Rotation;
         }
+
         void SetRotation(float rotation)
         {
             m_Rotation = rotation;
@@ -34,13 +37,18 @@ namespace Hyperion
         };
 
 
-        const glm::mat4& GetProjectionMatrix() const {
+        const glm::mat4& GetProjectionMatrix() const
+        {
             return m_ProjectionMatrix;
         }
-        const glm::mat4& GetViewMatrix() const {
+
+        const glm::mat4& GetViewMatrix() const
+        {
             return m_ViewMatrix;
         }
-        const glm::mat4& GetViewProjectionMatrix() const {
+
+        const glm::mat4& GetViewProjectionMatrix() const
+        {
             return m_ViewProjectionMatrix;
         }
 

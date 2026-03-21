@@ -14,7 +14,6 @@
 #include "GLFW/glfw3.h"
 
 
-
 #ifndef HYPERIONENGINE_WINDOWSWINDOW_H
 #define HYPERIONENGINE_WINDOWSWINDOW_H
 
@@ -34,8 +33,8 @@ namespace Hyperion
 
         void SetSize(unsigned int width, unsigned int height) override;
 
-        inline unsigned int GetWidth() const override { return m_Data.Width;}
-        inline unsigned int GetHeight() const override { return m_Data.Height;}
+        inline unsigned int GetWidth() const override { return m_Data.Width; }
+        inline unsigned int GetHeight() const override { return m_Data.Height; }
 
         // Window attributes
         inline void SetEventCallback(const EventCallbackFn& callback) override { m_Data.EventCallback = callback; }
@@ -44,7 +43,7 @@ namespace Hyperion
 
         virtual void* GetNativeWindow() const { return m_Window; }
 
-        private:
+    private:
         virtual void Init(const WindowProps& props);
         virtual void Shutdown();
 

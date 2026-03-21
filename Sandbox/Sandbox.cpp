@@ -7,7 +7,7 @@
 #include <glm/ext/matrix_clip_space.hpp> // glm::perspective
 #include <glm/ext/scalar_constants.hpp> // glm::pi
 
-glm::mat4 camera(float Translate, glm::vec2 const& Rotate)
+glm::mat4 camera(float Translate, const glm::vec2& Rotate)
 {
     glm::mat4 Projection = glm::perspective(glm::pi<float>() * 0.25f, 4.0f / 3.0f, 0.1f, 100.f);
     glm::mat4 View = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, -Translate));
@@ -20,7 +20,9 @@ glm::mat4 camera(float Translate, glm::vec2 const& Rotate)
 class ExampleLayer : public Hyperion::Layer
 {
 public:
-    ExampleLayer() : Layer("Example") {}
+    ExampleLayer() : Layer("Example")
+    {
+    }
 
     void OnUpdate() override
     {
@@ -36,26 +38,27 @@ public:
     {
         if (event.GetEventType() == Hyperion::EventType::KeyPressed)
         {
-            Hyperion::KeyPressedEvent& keyEvent = (Hyperion::KeyPressedEvent&)event;
+            auto& keyEvent = (Hyperion::KeyPressedEvent&)event;
             HYPERION_TRACE("Key Pressed: {} ", keyEvent.GetKeyCode());
         }
     };
-
-
 };
 
 
 class Sandbox : public Hyperion::Application
+{
+public:
+    Sandbox()
     {
-    public:
-        Sandbox(){
-            PushLayer(new ExampleLayer);;
-        }
-        ~Sandbox(){
-        }
-    };
-
-    Hyperion::Application* CreateApplication()
-    {
-        return new Sandbox();
+        PushLayer(new ExampleLayer);;
     }
+
+    ~Sandbox() override
+    {
+    }
+};
+
+Hyperion::Application* CreateApplication()
+{
+    return new Sandbox();
+}

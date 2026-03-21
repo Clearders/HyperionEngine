@@ -23,6 +23,5 @@ namespace Hyperion
         }
         HYPERION_CORE_ASSERT(false, "Unknown RendererAPI!");
         return nullptr;
-
     };
 } // Hyperion

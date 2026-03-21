@@ -1,0 +1,34 @@
+﻿  Sandbox.cpp
+C:\Users\13191\RiderProjects\Hyperion Engine\Hyperion\src\Hyperion\Core\Layer.h(27,21): warning C4251: “Hyperion::Layer::m_DebugName”:“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口以供“Hyperion::Layer”的客户端使用
+  (编译源文件“Sandbox.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
+      参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+  
+C:\Users\13191\RiderProjects\Hyperion Engine\Hyperion\src\Hyperion\Core\LayerStack.h(29,29): warning C4251: “Hyperion::LayerStack::m_Layers”:“std::vector<Hyperion::Layer *,std::allocator<Hyperion::Layer *>>”需要有 dll 接口以供“Hyperion::LayerStack”的客户端使用
+  (编译源文件“Sandbox.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(442,7):
+      参见“std::vector<Hyperion::Layer *,std::allocator<Hyperion::Layer *>>”的声明
+  
+C:\Users\13191\RiderProjects\Hyperion Engine\Hyperion\src\Hyperion\Core\LayerStack.h(30,39): warning C4251: “Hyperion::LayerStack::m_LayerInsert”:“std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>”需要有 dll 接口以供“Hyperion::LayerStack”的客户端使用
+C:\Users\13191\RiderProjects\Hyperion Engine\Hyperion\src\Hyperion\Core\LayerStack.h(30,39): warning C4251:         with
+C:\Users\13191\RiderProjects\Hyperion Engine\Hyperion\src\Hyperion\Core\LayerStack.h(30,39): warning C4251:         [
+C:\Users\13191\RiderProjects\Hyperion Engine\Hyperion\src\Hyperion\Core\LayerStack.h(30,39): warning C4251:             _Ty=Hyperion::Layer *
+C:\Users\13191\RiderProjects\Hyperion Engine\Hyperion\src\Hyperion\Core\LayerStack.h(30,39): warning C4251:         ]
+  (编译源文件“Sandbox.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(255,7):
+      参见“std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>”的声明
+          with
+          [
+              _Ty=Hyperion::Layer *
+          ]
+  
+C:\Users\13191\RiderProjects\Hyperion Engine\Hyperion\src\Hyperion\Events\ApplicationEvent.h(8,48): warning C4275: 非 dll 接口 class“Hyperion::Event”用作 dll 接口 class“Hyperion::WindowResizeEvent”的基
+  (编译源文件“Sandbox.cpp”)
+      C:\Users\13191\RiderProjects\Hyperion Engine\Hyperion\src\Hyperion\Events\Event.h(40,8):
+      参见“Hyperion::Event”的声明
+      C:\Users\13191\RiderProjects\Hyperion Engine\Hyperion\src\Hyperion\Events\ApplicationEvent.h(8,21):
+      参见“Hyperion::WindowResizeEvent”的声明
+  
+C:\Users\13191\RiderProjects\Hyperion Engine\Hyperion\src\Hyperion\Renderer\Shader.h(10,10): error C1083: 无法打开包括文件: “glm/fwd.hpp”: No such file or directory
+  (编译源文件“Sandbox.cpp”)
+  

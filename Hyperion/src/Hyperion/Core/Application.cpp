@@ -36,22 +36,22 @@ namespace Hyperion
 
         float vertices[3 * 7] = {
             -0.5f, -0.5f, 0.1f, 0.8f, 0.2f, 0.8f, 1.0f,
-             0.5f, -0.5f, 0.1f, 0.2f, 0.3f, 0.8f, 1.0f,
-             0.0f,  0.5f, 0.1f, 0.8f, 0.8f, 0.2f, 1.0f
+            0.5f, -0.5f, 0.1f, 0.2f, 0.3f, 0.8f, 1.0f,
+            0.0f, 0.5f, 0.1f, 0.8f, 0.8f, 0.2f, 1.0f
         };
 
         std::shared_ptr<VertexBuffer> vertexBuffer;
         vertexBuffer.reset(VertexBuffer::Create(vertices, sizeof(vertices)));
 
         BufferLayout layout = {
-            {ShaderDataType::Float3, "a_Position" },
-            {ShaderDataType::Float4, "a_Color" }
+            {ShaderDataType::Float3, "a_Position"},
+            {ShaderDataType::Float4, "a_Color"}
         };
 
         vertexBuffer->SetLayout(layout);
         m_VertexArray->AddVertexBuffer(vertexBuffer);
 
-        uint32_t indices[3] = { 0, 1, 2 };
+        uint32_t indices[3] = {0, 1, 2};
         std::shared_ptr<IndexBuffer> indexBuffer;
         indexBuffer.reset(IndexBuffer::Create(indices, sizeof(indices) / sizeof(uint32_t)));
         m_VertexArray->SetIndexBuffer(indexBuffer);
@@ -60,21 +60,21 @@ namespace Hyperion
 
         float squareVertices[3 * 4] = {
             -0.75f, -0.75f, 0.0f,
-             0.75f, -0.75f, 0.0f,
-             0.75f,  0.75f, 0.0f,
-            -0.75f,  0.75f, 0.0f
+            0.75f, -0.75f, 0.0f,
+            0.75f, 0.75f, 0.0f,
+            -0.75f, 0.75f, 0.0f
         };
 
         std::shared_ptr<VertexBuffer> squareVertexBuffer;
         squareVertexBuffer.reset(VertexBuffer::Create(squareVertices, sizeof(squareVertices)));
 
         BufferLayout squareVertexBufferLayout = {
-            {ShaderDataType::Float3, "a_Position" },
+            {ShaderDataType::Float3, "a_Position"},
         };
         squareVertexBuffer->SetLayout(squareVertexBufferLayout);
         m_SquareVertexArray->AddVertexBuffer(squareVertexBuffer);
 
-        uint32_t squareIndices[6] = { 0, 1, 2, 2, 3, 0 };
+        uint32_t squareIndices[6] = {0, 1, 2, 2, 3, 0};
         std::shared_ptr<IndexBuffer> squareIndexBuffer;
         squareIndexBuffer.reset(IndexBuffer::Create(squareIndices, sizeof(squareIndices) / sizeof(uint32_t)));
         m_SquareVertexArray->SetIndexBuffer(squareIndexBuffer);
@@ -148,14 +148,16 @@ namespace Hyperion
         m_BlueShader.reset(new Shader(blueShaderVertexSrc, blueShaderFragmentSrc));
     }
 
-    Application::~Application(){}
+    Application::~Application()
+    {
+    }
 
     void Application::OnEvent(Event& event)
     {
         EventDispatcher dispatcher(event);
         dispatcher.Dispatch<WindowCloseEvent>(BIND_EVENT_FN(OnWindowClose));
 
-        for (auto it = m_LayerStack.end(); it != m_LayerStack.begin(); )
+        for (auto it = m_LayerStack.end(); it != m_LayerStack.begin();)
         {
             (*--it)->OnEvent(event);
             if (event.Handled)
@@ -203,7 +205,6 @@ namespace Hyperion
         HYPERION_TRACE("WindowResizeEvent: {}, {}", e.GetWidth(), e.GetHeight());
         while (m_Running)
         {
-
             RenderCommand::SetClearColor({0.1f, 0.1f, 0.1f, 1});
             RenderCommand::Clear();
 
@@ -243,7 +244,4 @@ namespace Hyperion
         m_Running = false;
         return true;
     }
-
-
-
 }

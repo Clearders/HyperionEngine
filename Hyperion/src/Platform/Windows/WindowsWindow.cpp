@@ -46,7 +46,6 @@ namespace Hyperion
         m_Data.Height = props.Height;
 
 
-
         HYPERION_CORE_INFO("Creating window {} ({}, {})", props.Title, props.Width, props.Height);
 
 
@@ -97,19 +96,19 @@ namespace Hyperion
 
             switch (action)
             {
-                case GLFW_PRESS:
+            case GLFW_PRESS:
                 {
-                    KeyPressedEvent event(key,0);
+                    KeyPressedEvent event(key, 0);
                     data.EventCallback(event);
                     break;
                 }
-                case GLFW_RELEASE:
+            case GLFW_RELEASE:
                 {
                     KeyReleasedEvent event(key);
                     data.EventCallback(event);
                     break;
                 }
-                case GLFW_REPEAT:
+            case GLFW_REPEAT:
                 {
                     KeyPressedEvent event(key, 1);
                     data.EventCallback(event);
@@ -124,13 +123,13 @@ namespace Hyperion
 
             switch (action)
             {
-                case GLFW_PRESS:
+            case GLFW_PRESS:
                 {
                     MouseButtonPressedEvent event(button);
                     data.EventCallback(event);
                     break;
                 }
-                case GLFW_RELEASE:
+            case GLFW_RELEASE:
                 {
                     MouseButtonReleasedEvent event(button);
                     data.EventCallback(event);
@@ -188,5 +187,4 @@ namespace Hyperion
     {
         return m_Data.VSync;
     }
-
 } // Hyperion

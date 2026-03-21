@@ -9,35 +9,35 @@ set(GLAD_DIR "${CMAKE_SOURCE_DIR}/vendor/GLAD/src")
 if (EXISTS "${GLAD_DIR}/glad.c")
     set(GLAD_SOURCES "${GLAD_DIR}/glad.c"
     )
-else()
+else ()
     file(GLOB_RECURSE GLAD_SOURCES CONFIGURE_DEPENDS "${GLAD_DIR}/*.c")
-endif()
+endif ()
 
 if (NOT GLAD_SOURCES)
     message(FATAL_ERROR "No GLAD sources found in ${GLAD_DIR}. Make sure vendor/GLAD/src/glad.c exists or update the path in CMakeLists.txt")
-endif()
+endif ()
 
 add_library(glad STATIC ${GLAD_SOURCES})
 add_library(glad::glad ALIAS glad)
 target_include_directories(glad SYSTEM PUBLIC ${CMAKE_SOURCE_DIR}/vendor/GLAD/include)
 if (CMAKE_C_COMPILER)
     set_target_properties(glad PROPERTIES LINKER_LANGUAGE C)
-elseif(CMAKE_CXX_COMPILER)
+elseif (CMAKE_CXX_COMPILER)
     set_target_properties(glad PROPERTIES LINKER_LANGUAGE CXX)
-endif()
+endif ()
 
 find_package(OpenGL REQUIRED)
 find_package(glfw3 CONFIG)
 
 set(IMGUI_DIR "${CMAKE_SOURCE_DIR}/vendor/imgui")
 set(IMGUI_SOURCES
-    "${IMGUI_DIR}/imgui.cpp"
-    "${IMGUI_DIR}/imgui_demo.cpp"
-    "${IMGUI_DIR}/imgui_draw.cpp"
-    "${IMGUI_DIR}/imgui_tables.cpp"
-    "${IMGUI_DIR}/imgui_widgets.cpp"
-    "${IMGUI_DIR}/backends/imgui_impl_glfw.cpp"
-    "${IMGUI_DIR}/backends/imgui_impl_opengl3.cpp"
+        "${IMGUI_DIR}/imgui.cpp"
+        "${IMGUI_DIR}/imgui_demo.cpp"
+        "${IMGUI_DIR}/imgui_draw.cpp"
+        "${IMGUI_DIR}/imgui_tables.cpp"
+        "${IMGUI_DIR}/imgui_widgets.cpp"
+        "${IMGUI_DIR}/backends/imgui_impl_glfw.cpp"
+        "${IMGUI_DIR}/backends/imgui_impl_opengl3.cpp"
 )
 
 add_library(imgui STATIC ${IMGUI_SOURCES})
@@ -74,11 +74,11 @@ if (HYPERION_BUILD_SHARED)
             src/Hyperion/Renderer/OrthographicCamera.cpp
             src/Hyperion/Renderer/OrthographicCamera.h
     )
-endif()
+endif ()
 
 add_library(Hyperion ${HYPERION_LIB_TYPE}
-    ${HYPERION_SOURCES}
-    ${HYPERION_HEADERS}
+        ${HYPERION_SOURCES}
+        ${HYPERION_HEADERS}
         src/Hyperion/Core/Window.h
         src/Platform/Windows/WindowsWindow.cpp
         src/Platform/Windows/WindowsWindow.h
@@ -95,16 +95,16 @@ target_include_directories(Hyperion PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src)
 
 if (WIN32)
     target_compile_definitions(Hyperion PUBLIC HYPERION_PLATFORM_WINDOWS PRIVATE HYPERION_BUILD_DLL)
-endif()
+endif ()
 
 hyperion_configure_target(Hyperion)
 
 if (HYPERION_ENABLE_PCH)
     target_precompile_headers(Hyperion PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/src/Hyperion/hyperionpch.h)
-endif()
+endif ()
 
 target_link_libraries(Hyperion
-    PUBLIC
+        PUBLIC
         spdlog::spdlog
         glfw
         glad

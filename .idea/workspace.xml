@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="BackendCodeEditorMiscSettings">
-    <option name="/Default/Environment/Hierarchy/GeneratedFilesCacheKey/Timestamp/@EntryValue" value="6" type="long" />
+    <option name="/Default/Environment/Hierarchy/GeneratedFilesCacheKey/Timestamp/@EntryValue" value="8" type="long" />
     <option name="/Default/Environment/UserInterface/HierarchyView/ViewStyle/@EntryValue" value="SuperTypes" type="string" />
     <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
     <option name="/Default/Housekeeping/GlobalSettingsUpgraded/IsUpgraded/@EntryValue" value="true" type="bool" />
@@ -35,23 +35,271 @@
   </component>
   <component name="CMakeSettings">
     <configurations>
-      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" GENERATION_OPTIONS="-DCMAKE_TOOLCHAIN_FILE=C:\Users\13191\.vcpkg-clion\vcpkg\scripts\buildsystems\vcpkg.cmake -DVCPKG_TARGET_TRIPLET=x64-mingw-dynamic" />
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" GENERATION_OPTIONS="-DVCPKG_TARGET_TRIPLET=x64-mingw-dynamic" />
     </configurations>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8dd5f59-e93d-40e7-9f52-abc8fb001637" name="更改" comment="Render Streaming">
-      <change afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/OrthographicCamera.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/OrthographicCamera.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/agents/HyperionEngine.agent.md" beforeDir="false" afterPath="$PROJECT_DIR$/.github/agents/HyperionEngine.agent.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitmodules" beforeDir="false" afterPath="$PROJECT_DIR$/.gitmodules" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Hyperion Engine/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Hyperion Engine/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion Engine.slnx" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion Engine.slnx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hyperion/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/Hyperion.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/Hyperion.vcxproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Application.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Application.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Application.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Application.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Core.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Core.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/EntryPoint.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/EntryPoint.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Input.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Input.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/KeyCodes.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/KeyCodes.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Layer.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Layer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/LayerStack.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/LayerStack.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Log.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Log.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Window.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Window.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Events/ApplicationEvent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Events/ApplicationEvent.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Events/Event.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Events/Event.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Events/KeyEvent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Events/KeyEvent.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Events/MouseEvent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Events/MouseEvent.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/ImGui/ImGuiLayer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/ImGui/ImGuiLayer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/ImGui/ImGuiLayer.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/ImGui/ImGuiLayer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/Buffer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/Buffer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/Buffer.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/Buffer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/GraphicsContext.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/GraphicsContext.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/OpenGLBuffer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/OpenGLBuffer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/OpenGLBuffer.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/OpenGLBuffer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/OrthographicCamera.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/OrthographicCamera.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/OrthographicCamera.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/OrthographicCamera.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/RenderCommand.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/RenderCommand.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/Renderer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/Renderer.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/Renderer.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/Renderer.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/RendererAPI.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/RendererAPI.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/RendererAPI.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/RendererAPI.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/Shader.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/Shader.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/Shader.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/Shader.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/VertexArray.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/VertexArray.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/hyperionpch.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/hyperionpch.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/hyperionpch.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/hyperionpch.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Platform/OpenGL/OpenGLContext.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Platform/OpenGL/OpenGLContext.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Platform/OpenGL/OpenGLContext.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Platform/OpenGL/OpenGLContext.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Platform/OpenGL/OpenGLRendererAPI.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Platform/OpenGL/OpenGLRendererAPI.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Platform/OpenGL/OpenGLRendererAPI.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Platform/OpenGL/OpenGLRendererAPI.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Platform/OpenGL/OpenGLVertexArray.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Platform/OpenGL/OpenGLVertexArray.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Platform/OpenGL/OpenGLVertexArray.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Platform/OpenGL/OpenGLVertexArray.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Platform/Windows/WindowsInput.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Platform/Windows/WindowsInput.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Platform/Windows/WindowsInput.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Platform/Windows/WindowsInput.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Platform/Windows/WindowsWindow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Platform/Windows/WindowsWindow.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Platform/Windows/WindowsWindow.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Platform/Windows/WindowsWindow.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/x64/Debug/Application.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/x64/Debug/EntryPoint.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/x64/Debug/Hyperion.Build.CppClean.log" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/x64/Debug/Hyperion.Build.CppClean.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/x64/Debug/Hyperion.ilk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/x64/Debug/Hyperion.tlog/CL.command.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/x64/Debug/Hyperion.tlog/CL.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/x64/Debug/Hyperion.tlog/CL.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/x64/Debug/Hyperion.tlog/Cl.items.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/x64/Debug/Hyperion.tlog/Hyperion.lastbuildstate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/x64/Debug/Hyperion.tlog/link.command.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/x64/Debug/Hyperion.tlog/link.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/x64/Debug/Hyperion.tlog/link.secondary.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/x64/Debug/Hyperion.tlog/link.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/x64/Debug/Log.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/x64/Debug/hyperionpch.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/x64/Debug/vc143.idb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/x64/Debug/vc143.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sandbox/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Sandbox/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sandbox/Sandbox.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Sandbox/Sandbox.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sandbox/Sandbox.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Sandbox/Sandbox.vcxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sandbox/x64/Debug/Sandbox.ilk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sandbox/x64/Debug/Sandbox.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sandbox/x64/Debug/Sandbox.tlog/CL.command.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sandbox/x64/Debug/Sandbox.tlog/CL.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sandbox/x64/Debug/Sandbox.tlog/CL.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sandbox/x64/Debug/Sandbox.tlog/Cl.items.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sandbox/x64/Debug/Sandbox.tlog/Sandbox.lastbuildstate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sandbox/x64/Debug/Sandbox.tlog/link.command.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sandbox/x64/Debug/Sandbox.tlog/link.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sandbox/x64/Debug/Sandbox.tlog/link.secondary.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sandbox/x64/Debug/Sandbox.tlog/link.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sandbox/x64/Debug/vc143.idb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sandbox/x64/Debug/vc143.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/HyperionCommon.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake/HyperionCommon.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vcpkg.json" beforeDir="false" afterPath="$PROJECT_DIR$/vcpkg.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/GLAD/include/KHR/khrplatform.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/GLAD/include/KHR/khrplatform.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/GLAD/include/glad/glad.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/GLAD/include/glad/glad.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/GLAD/src/glad.c" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/GLAD/src/glad.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/glfw" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/glfw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/glm" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/glm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/glm/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/glm/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/imgui" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/imgui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/.clang-format" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/.clang-format" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/.clang-tidy" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/.clang-tidy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/.github/workflows/coverity_scan.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/.github/workflows/coverity_scan.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/.github/workflows/linux.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/.github/workflows/linux.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/.github/workflows/macos.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/.github/workflows/macos.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/.github/workflows/windows.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/.github/workflows/windows.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/appveyor.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/appveyor.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/bench/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/bench/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/bench/async_bench.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/bench/async_bench.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/bench/bench.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/bench/bench.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/bench/formatter-bench.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/bench/formatter-bench.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/bench/latency.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/bench/latency.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/bench/utils.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/bench/utils.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/cmake/ide.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/cmake/ide.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/cmake/spdlogCPack.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/cmake/spdlogCPack.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/cmake/utils.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/cmake/utils.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/example/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/example/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/example/example.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/example/example.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/async.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/async.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/async_logger-inl.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/async_logger-inl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/async_logger.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/async_logger.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/cfg/argv.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/cfg/argv.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/cfg/env.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/cfg/env.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/cfg/helpers-inl.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/cfg/helpers-inl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/cfg/helpers.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/cfg/helpers.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/common-inl.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/common-inl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/common.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/common.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/details/backtracer-inl.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/details/backtracer-inl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/details/backtracer.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/details/backtracer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/details/circular_q.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/details/circular_q.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/details/console_globals.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/details/console_globals.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/details/file_helper-inl.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/details/file_helper-inl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/details/file_helper.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/details/file_helper.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/details/fmt_helper.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/details/fmt_helper.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/details/log_msg-inl.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/details/log_msg-inl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/details/log_msg.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/details/log_msg.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/details/log_msg_buffer-inl.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/details/log_msg_buffer-inl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/details/log_msg_buffer.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/details/log_msg_buffer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/details/mpmc_blocking_q.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/details/mpmc_blocking_q.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/details/null_mutex.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/details/null_mutex.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/details/os-inl.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/details/os-inl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/details/os.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/details/os.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/details/periodic_worker-inl.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/details/periodic_worker-inl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/details/periodic_worker.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/details/periodic_worker.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/details/registry-inl.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/details/registry-inl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/details/registry.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/details/registry.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/details/synchronous_factory.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/details/synchronous_factory.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/details/tcp_client-windows.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/details/tcp_client-windows.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/details/tcp_client.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/details/tcp_client.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/details/thread_pool-inl.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/details/thread_pool-inl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/details/thread_pool.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/details/thread_pool.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/details/udp_client-windows.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/details/udp_client-windows.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/details/udp_client.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/details/udp_client.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/details/windows_include.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/details/windows_include.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/fmt/bin_to_hex.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/fmt/bin_to_hex.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/fmt/bundled/args.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/fmt/bundled/args.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/fmt/bundled/base.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/fmt/bundled/base.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/fmt/bundled/chrono.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/fmt/bundled/chrono.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/fmt/bundled/color.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/fmt/bundled/color.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/fmt/bundled/compile.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/fmt/bundled/compile.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/fmt/bundled/core.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/fmt/bundled/core.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/fmt/bundled/format-inl.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/fmt/bundled/format-inl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/fmt/bundled/format.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/fmt/bundled/format.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/fmt/bundled/os.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/fmt/bundled/os.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/fmt/bundled/ostream.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/fmt/bundled/ostream.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/fmt/bundled/printf.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/fmt/bundled/printf.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/fmt/bundled/ranges.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/fmt/bundled/ranges.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/fmt/bundled/std.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/fmt/bundled/std.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/fmt/bundled/xchar.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/fmt/bundled/xchar.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/fmt/chrono.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/fmt/chrono.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/fmt/compile.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/fmt/compile.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/fmt/fmt.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/fmt/fmt.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/fmt/ostr.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/fmt/ostr.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/fmt/ranges.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/fmt/ranges.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/fmt/std.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/fmt/std.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/fmt/xchar.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/fmt/xchar.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/formatter.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/formatter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/fwd.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/fwd.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/logger-inl.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/logger-inl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/logger.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/logger.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/mdc.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/mdc.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/pattern_formatter-inl.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/pattern_formatter-inl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/pattern_formatter.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/pattern_formatter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/android_sink.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/android_sink.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/ansicolor_sink-inl.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/ansicolor_sink-inl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/ansicolor_sink.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/ansicolor_sink.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/base_sink-inl.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/base_sink-inl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/base_sink.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/base_sink.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/basic_file_sink-inl.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/basic_file_sink-inl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/basic_file_sink.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/basic_file_sink.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/callback_sink.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/callback_sink.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/daily_file_sink.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/daily_file_sink.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/dist_sink.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/dist_sink.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/dup_filter_sink.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/dup_filter_sink.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/hourly_file_sink.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/hourly_file_sink.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/kafka_sink.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/kafka_sink.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/mongo_sink.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/mongo_sink.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/msvc_sink.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/msvc_sink.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/null_sink.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/null_sink.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/ostream_sink.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/ostream_sink.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/qt_sinks.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/qt_sinks.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/ringbuffer_sink.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/ringbuffer_sink.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/rotating_file_sink-inl.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/rotating_file_sink-inl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/rotating_file_sink.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/rotating_file_sink.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/sink-inl.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/sink-inl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/sink.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/sink.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/stdout_color_sinks-inl.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/stdout_color_sinks-inl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/stdout_color_sinks.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/stdout_color_sinks.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/stdout_sinks-inl.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/stdout_sinks-inl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/stdout_sinks.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/stdout_sinks.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/syslog_sink.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/syslog_sink.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/systemd_sink.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/systemd_sink.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/tcp_sink.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/tcp_sink.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/udp_sink.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/udp_sink.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/win_eventlog_sink.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/win_eventlog_sink.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/wincolor_sink-inl.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/wincolor_sink-inl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/wincolor_sink.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/sinks/wincolor_sink.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/spdlog-inl.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/spdlog-inl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/spdlog.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/spdlog.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/stopwatch.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/stopwatch.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/tweakme.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/tweakme.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/version.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/include/spdlog/version.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/logos/jetbrains-variant-4.svg" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/logos/jetbrains-variant-4.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/src/async.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/src/async.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/src/bundled_fmtlib_format.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/src/bundled_fmtlib_format.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/src/cfg.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/src/cfg.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/src/color_sinks.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/src/color_sinks.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/src/file_sinks.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/src/file_sinks.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/src/spdlog.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/src/spdlog.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/src/stdout_sinks.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/src/stdout_sinks.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/tests/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/tests/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/tests/includes.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/tests/includes.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/tests/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/tests/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/tests/test_async.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/tests/test_async.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/tests/test_backtrace.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/tests/test_backtrace.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/tests/test_bin_to_hex.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/tests/test_bin_to_hex.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/tests/test_cfg.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/tests/test_cfg.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/tests/test_circular_q.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/tests/test_circular_q.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/tests/test_create_dir.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/tests/test_create_dir.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/tests/test_custom_callbacks.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/tests/test_custom_callbacks.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/tests/test_daily_logger.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/tests/test_daily_logger.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/tests/test_dup_filter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/tests/test_dup_filter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/tests/test_errors.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/tests/test_errors.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/tests/test_eventlog.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/tests/test_eventlog.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/tests/test_file_helper.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/tests/test_file_helper.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/tests/test_file_logging.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/tests/test_file_logging.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/tests/test_fmt_helper.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/tests/test_fmt_helper.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/tests/test_macros.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/tests/test_macros.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/tests/test_misc.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/tests/test_misc.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/tests/test_mpmc_q.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/tests/test_mpmc_q.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/tests/test_pattern_formatter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/tests/test_pattern_formatter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/tests/test_registry.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/tests/test_registry.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/tests/test_ringbuffer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/tests/test_ringbuffer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/tests/test_sink.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/tests/test_sink.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/tests/test_stdout_api.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/tests/test_stdout_api.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/tests/test_stopwatch.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/tests/test_stopwatch.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/tests/test_systemd.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/tests/test_systemd.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/tests/test_time_point.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/tests/test_time_point.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/tests/utils.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/tests/utils.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spdlog/tests/utils.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/spdlog/tests/utils.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/x64/Debug/Hyperion.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/x64/Debug/Hyperion.exp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/x64/Debug/Hyperion.lib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/x64/Debug/Hyperion.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/x64/Debug/Sandbox.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/x64/Debug/Sandbox.pdb" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +327,7 @@
     </selectedModels>
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="2414" />
+    <option name="cachedIndexableFilesCount" value="2810" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileTemplateManagerImpl">
@@ -91,6 +339,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -106,13 +355,20 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Hyperion/src/Hyperion.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Application.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Application.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Hyperion/src/Hyperion/Core/EntryPoint.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Layer.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Hyperion/src/Hyperion/ImGui/ImGuiLayer.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Hyperion/src/Hyperion/ImGui/ImGuiLayer.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/Buffer.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/GraphicsContext.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/GraphicsContext.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/OrthographicCamera.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/RenderCommand.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/Renderer.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/RendererAPI.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/Shader.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/Shader.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Hyperion/src/Platform/OpenGL/OpenGLContext.cpp" root0="FORCE_HIGHLIGHTING" />
@@ -142,33 +398,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;C/C++ 文件.main.cpp.executor&quot;: &quot;Run&quot;,
-    &quot;CMake 应用程序.Sandbox.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.RadMigrateCodeStyle&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.west.config.association.type.startup.service&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/13191/RiderProjects/Hyperion Engine&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;CPPToolchains&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "C/C++ 文件.main.cpp.executor": "Run",
+    "CMake 应用程序.Sandbox.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.RadMigrateCodeStyle": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "RunOnceActivity.west.config.association.type.startup.service": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/13191/RiderProjects/Hyperion Engine",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\13191\RiderProjects\Hyperion Engine" />
@@ -329,6 +585,9 @@
       <workItem from="1773842757354" duration="1211000" />
       <workItem from="1773922064912" duration="110000" />
       <workItem from="1774009097093" duration="9400000" />
+      <workItem from="1774075518161" duration="1155000" />
+      <workItem from="1774078266972" duration="87000" />
+      <workItem from="1774078824485" duration="274000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
@@ -490,7 +749,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>

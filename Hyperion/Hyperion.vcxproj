@@ -240,6 +240,8 @@
       <AdditionalOptions>/utf-8 </AdditionalOptions>
       <LinkCompiled>true</LinkCompiled>
     </ClCompile>
+    <ClCompile Include="src\Hyperion\Core\Layer.cpp" />
+    <ClCompile Include="src\Hyperion\Core\LayerStack.cpp" />
     <ClCompile Include="src\Hyperion\Core\Log.cpp">
       <RuntimeLibrary>MultiThreadedDebugDll</RuntimeLibrary>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -319,18 +321,63 @@
       <LinkCompiled>true</LinkCompiled>
     </ClCompile>
     <ClCompile Include="src\Hyperion\hyperionpch.cpp" />
+    <ClCompile Include="src\Hyperion\ImGui\ImGuiBuild.cpp" />
+    <ClCompile Include="src\Hyperion\ImGui\ImGuiLayer.cpp" />
+    <ClCompile Include="src\Hyperion\Renderer\Buffer.cpp" />
+    <ClCompile Include="src\Hyperion\Renderer\GraphicsContext.cpp" />
+    <ClCompile Include="src\Hyperion\Renderer\OpenGLBuffer.cpp" />
+    <ClCompile Include="src\Hyperion\Renderer\OrthographicCamera.cpp" />
+    <ClCompile Include="src\Hyperion\Renderer\RenderCommand.cpp" />
+    <ClCompile Include="src\Hyperion\Renderer\Renderer.cpp" />
+    <ClCompile Include="src\Hyperion\Renderer\RendererAPI.cpp" />
+    <ClCompile Include="src\Hyperion\Renderer\Shader.cpp" />
+    <ClCompile Include="src\Hyperion\Renderer\VertexArray.cpp" />
+    <ClCompile Include="src\Platform\OpenGL\OpenGLContext.cpp" />
+    <ClCompile Include="src\Platform\OpenGL\OpenGLRendererAPI.cpp" />
+    <ClCompile Include="src\Platform\OpenGL\OpenGLVertexArray.cpp" />
+    <ClCompile Include="src\Platform\Windows\WindowsInput.cpp" />
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Hyperion.h" />
     <ClInclude Include="src\Hyperion\Core\Application.h" />
     <ClInclude Include="src\Hyperion\Core\Core.h" />
     <ClInclude Include="src\Hyperion\Core\EntryPoint.h" />
+    <ClInclude Include="src\Hyperion\Core\Input.h" />
+    <ClInclude Include="src\Hyperion\Core\KeyCodes.h" />
+    <ClInclude Include="src\Hyperion\Core\Layer.h" />
+    <ClInclude Include="src\Hyperion\Core\LayerStack.h" />
     <ClInclude Include="src\Hyperion\Core\Log.h" />
+    <ClInclude Include="src\Hyperion\Core\MouseButtonCodes.h" />
+    <ClInclude Include="src\Hyperion\Core\Window.h" />
     <ClInclude Include="src\Hyperion\Events\ApplicationEvent.h" />
     <ClInclude Include="src\Hyperion\Events\Event.h" />
     <ClInclude Include="src\Hyperion\Events\KeyEvent.h" />
     <ClInclude Include="src\Hyperion\Events\MouseEvent.h" />
     <ClInclude Include="src\Hyperion\hyperionpch.h" />
+    <ClInclude Include="src\Hyperion\ImGui\ImGuiLayer.h" />
+    <ClInclude Include="src\Hyperion\Renderer\Buffer.h" />
+    <ClInclude Include="src\Hyperion\Renderer\GraphicsContext.h" />
+    <ClInclude Include="src\Hyperion\Renderer\OpenGLBuffer.h" />
+    <ClInclude Include="src\Hyperion\Renderer\OrthographicCamera.h" />
+    <ClInclude Include="src\Hyperion\Renderer\RenderCommand.h" />
+    <ClInclude Include="src\Hyperion\Renderer\Renderer.h" />
+    <ClInclude Include="src\Hyperion\Renderer\RendererAPI.h" />
+    <ClInclude Include="src\Hyperion\Renderer\Shader.h" />
+    <ClInclude Include="src\Hyperion\Renderer\VertexArray.h" />
+    <ClInclude Include="src\Platform\OpenGL\OpenGLContext.h" />
+    <ClInclude Include="src\Platform\OpenGL\OpenGLRendererAPI.h" />
+    <ClInclude Include="src\Platform\OpenGL\OpenGLVertexArray.h" />
+    <ClInclude Include="src\Platform\Windows\WindowsInput.h" />
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CMakeLists.txt" />
+    <Content Include="x64\Debug\Hyperion.Build.CppClean.log" />
+    <Content Include="x64\Debug\Hyperion.dll.recipe" />
+    <Content Include="x64\Debug\Hyperion.log" />
+    <Content Include="x64\Debug\Hyperion.tlog\unsuccessfulbuild" />
+    <Content Include="x64\Debug\Hyperion.vcxproj.FileListAbsolute.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

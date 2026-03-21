@@ -22,7 +22,7 @@
 namespace Hyperion
 {
     OpenGLContext::OpenGLContext(GLFWwindow* windowHandle)
-        :m_windowHandle(windowHandle)
+        : m_windowHandle(windowHandle)
     {
         HYPERION_CORE_ASSERT(windowHandle, "Window handle is null!");
     }

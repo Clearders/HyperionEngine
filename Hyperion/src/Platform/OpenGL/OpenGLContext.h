@@ -10,7 +10,7 @@ struct GLFWwindow;
 
 namespace Hyperion
 {
-    class OpenGLContext :public GraphicsContext
+    class OpenGLContext : public GraphicsContext
     {
     public:
         OpenGLContext(GLFWwindow* windowHandle);

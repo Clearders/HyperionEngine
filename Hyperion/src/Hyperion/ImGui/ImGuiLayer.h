@@ -27,6 +27,5 @@ namespace Hyperion
 
     private:
         double m_Time = 0.0;
-
     };
 } // Hyperion
