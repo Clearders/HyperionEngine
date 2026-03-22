@@ -6,10 +6,11 @@
 #define HYPERIONENGINE_ORTHOGRAPHICCAMERA_H
 
 #include <glm/glm.hpp>
+#include "Hyperion/Core/Core.h"
 
 namespace Hyperion
 {
-    class OrthographicCamera
+    class HYPERION_API OrthographicCamera
     {
     public:
         OrthographicCamera(float left, float right, float bottom, float top);

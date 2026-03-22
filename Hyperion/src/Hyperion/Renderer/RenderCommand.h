@@ -6,10 +6,11 @@
 #define HYPERIONENGINE_RENDERCOMMAND_H
 
 #include "RendererAPI.h"
+#include "Hyperion/Core/Core.h"
 
 namespace Hyperion
 {
-    class RenderCommand
+    class HYPERION_API RenderCommand
     {
     public:
         inline static void SetClearColor(const glm::vec4& color)

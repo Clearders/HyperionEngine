@@ -8,10 +8,11 @@
 #include "OrthographicCamera.h"
 #include "Shader.h"
 #include "Hyperion\Renderer\RenderCommand.h"
+#include "Hyperion/Core/Core.h"
 
 namespace Hyperion
 {
-    class Renderer
+    class HYPERION_API Renderer
     {
     public:
         static void BeginScene(OrthographicCamera& camera);

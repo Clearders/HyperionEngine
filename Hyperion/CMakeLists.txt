@@ -44,50 +44,9 @@ add_library(imgui STATIC ${IMGUI_SOURCES})
 target_include_directories(imgui SYSTEM PUBLIC "${IMGUI_DIR}" "${IMGUI_DIR}/backends")
 target_link_libraries(imgui PUBLIC glfw OpenGL::GL glad)
 
-set(HYPERION_LIB_TYPE STATIC)
-if (HYPERION_BUILD_SHARED)
-    set(HYPERION_LIB_TYPE SHARED
-            src/Hyperion/Core/Input.h
-            src/Platform/Windows/WindowsInput.cpp
-            src/Platform/Windows/WindowsInput.h
-            src/Hyperion/Core/MouseButtonCodes.h
-            src/Hyperion/ImGui/ImGuiBuild.cpp
-            src/Hyperion/Renderer/GraphicsContext.h
-            src/Hyperion/Renderer/Shader.cpp
-            src/Hyperion/Renderer/Shader.h
-            src/Hyperion/Renderer/Buffer.h
-            src/Hyperion/Renderer/Buffer.cpp
-            src/Hyperion/Renderer/OpenGLBuffer.cpp
-            src/Hyperion/Renderer/OpenGLBuffer.h
-            src/Hyperion/Renderer/Renderer.cpp
-            src/Hyperion/Renderer/Renderer.h
-            src/Hyperion/Renderer/VertexArray.cpp
-            src/Hyperion/Renderer/VertexArray.h
-            src/Platform/OpenGL/OpenGLVertexArray.cpp
-            src/Platform/OpenGL/OpenGLVertexArray.h
-            src/Hyperion/Renderer/RendererAPI.cpp
-            src/Hyperion/Renderer/RendererAPI.h
-            src/Hyperion/Renderer/RenderCommand.cpp
-            src/Hyperion/Renderer/RenderCommand.h
-            src/Platform/OpenGL/OpenGLRendererAPI.cpp
-            src/Platform/OpenGL/OpenGLRendererAPI.h
-            src/Hyperion/Renderer/OrthographicCamera.cpp
-            src/Hyperion/Renderer/OrthographicCamera.h
-    )
-endif ()
-
-add_library(Hyperion ${HYPERION_LIB_TYPE}
+add_library(Hyperion SHARED
         ${HYPERION_SOURCES}
         ${HYPERION_HEADERS}
-        src/Hyperion/Core/Window.h
-        src/Platform/Windows/WindowsWindow.cpp
-        src/Platform/Windows/WindowsWindow.h
-        src/Hyperion/Core/KeyCodes.h
-        src/Hyperion/Core/Layer.cpp
-        src/Hyperion/Core/Layer.h
-        src/Hyperion/Renderer/GraphicsContext.cpp
-        src/Platform/OpenGL/OpenGLContext.cpp
-        src/Platform/OpenGL/OpenGLContext.h
 )
 
 target_compile_features(Hyperion PUBLIC cxx_std_17)

@@ -8,10 +8,11 @@
 #include <string>
 
 #include "glm/fwd.hpp"
+#include "Hyperion/Core/Core.h"
 
 namespace Hyperion
 {
-    class Shader
+    class HYPERION_API Shader
     {
     public:
         Shader(const std::string& vertexSrc, const std::string& fragmentSrc);

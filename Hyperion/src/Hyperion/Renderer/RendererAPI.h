@@ -7,10 +7,11 @@
 
 #include <glm/glm.hpp>
 #include "VertexArray.h"
+#include "Hyperion/Core/Core.h"
 
 namespace Hyperion
 {
-    class RendererAPI
+    class HYPERION_API RendererAPI
     {
     public:
         enum class API
