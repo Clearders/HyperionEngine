@@ -2,22 +2,20 @@
 
 #include <functional>
 
-#include "imgui.h"
 #include "../Events/ApplicationEvent.h"
 
 #include "Log.h"
 #include "../Events/Event.h"
 
+#include "Core.h"
 #include "Layer.h"
 #include "Window.h"
-#include "glm/glm.hpp"
+#include "examples/libs/glfw/include/GLFW/glfw3.h"
 #include "Hyperion/Renderer/Renderer.h"
 
 
 namespace Hyperion
 {
-#define BIND_EVENT_FN(x) std::bind(&Application::x, this, std::placeholders::_1)
-
     Application* Application::m_Instance = nullptr;
 
     Application::Application()
@@ -26,7 +24,7 @@ namespace Hyperion
         m_Instance = this;
 
         m_Window = std::unique_ptr<Window>(Window::Create());
-        m_Window->SetEventCallback(BIND_EVENT_FN(OnEvent));
+        m_Window->SetEventCallback(BIND_EVENT_FN(Application::OnEvent));
 
         m_ImGuiLayer = new ImGuiLayer();
         PushOverlay(m_ImGuiLayer);
@@ -39,7 +37,7 @@ namespace Hyperion
     void Application::OnEvent(Event& event)
     {
         EventDispatcher dispatcher(event);
-        dispatcher.Dispatch<WindowCloseEvent>(BIND_EVENT_FN(OnWindowClose));
+        dispatcher.Dispatch<WindowCloseEvent>(BIND_EVENT_FN(Application::OnWindowClose));
 
         for (auto it = m_LayerStack.end(); it != m_LayerStack.begin();)
         {
@@ -91,9 +89,13 @@ namespace Hyperion
         {
 
 
+            float time = (float)glfwGetTime(); //Platform::GetTime();
+            Timestep timestep = time - m_lastFrameTime;
+            m_lastFrameTime = time;
+
 
             for (Layer* layer : m_LayerStack)
-                layer->OnUpdate();
+                layer->OnUpdate(timestep);
 
             /*
             auto[x, y] = Input::GetMousePosition();

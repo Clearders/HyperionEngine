@@ -47,6 +47,8 @@ target_link_libraries(imgui PUBLIC glfw OpenGL::GL glad)
 add_library(Hyperion SHARED
         ${HYPERION_SOURCES}
         ${HYPERION_HEADERS}
+        src/Hyperion/Core/Timestep.cpp
+        src/Hyperion/Core/Timestep.h
 )
 
 target_compile_features(Hyperion PUBLIC cxx_std_17)

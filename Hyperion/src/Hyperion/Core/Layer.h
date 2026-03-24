@@ -6,6 +6,7 @@
 
 
 #include "Core.h"
+#include "Timestep.h"
 #include "../Events/Event.h"
 
 namespace Hyperion
@@ -24,7 +25,7 @@ namespace Hyperion
         {
         }
 
-        virtual void OnUpdate()
+        virtual void OnUpdate(Timestep ts)
         {
         }
 

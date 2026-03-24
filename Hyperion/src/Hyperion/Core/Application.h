@@ -1,19 +1,15 @@
 ﻿#pragma once
 
-#include <map>
-
 #include "Core.h"
+
 #include "Window.h"
 #include "LayerStack.h"
 #include "../Events/Event.h"
 #include "Hyperion/Events/ApplicationEvent.h"
 
-#include "Hyperion/ImGui/ImGuiLayer.h"
+#include "Hyperion/Core/Timestep.h"
 
-#include "Hyperion/Renderer/Shader.h"
-#include "Hyperion/Renderer/Buffer.h"
-#include "Hyperion/Renderer/OrthographicCamera.h"
-#include "Hyperion/Renderer/VertexArray.h"
+#include "Hyperion/ImGui/ImGuiLayer.h"
 
 namespace Hyperion
 {
@@ -32,12 +28,14 @@ namespace Hyperion
 
         void PushOverlay(Layer* overlay);
         void PopOverlay(Layer* overlay);
-
         inline static Application& Get() { return *m_Instance; }
         inline Window& GetWindow() { return *m_Window; }
 
     private:
         bool OnWindowClose(WindowCloseEvent& event);
+    private:
+        Timestep m_Timestep;
+        float m_lastFrameTime = 0.0f;
 
         std::unique_ptr<Window> m_Window;
         ImGuiLayer* m_ImGuiLayer;

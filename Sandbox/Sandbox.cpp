@@ -1,11 +1,13 @@
+#include "imgui_internal.h"
 #include "../Hyperion/src/Hyperion.h"
+#include "examples/libs/glfw/include/GLFW/glfw3.h"
 
 
 class ExampleLayer : public Hyperion::Layer
 {
 public:
     ExampleLayer()
-        : Layer("Example"), m_Camera(-1.6f, 1.6f, -0.9f, 0.9f)
+        : Layer("Example"), m_Camera(-1.6f, 1.6f, -0.9f, 0.9f), m_CameraPosition(0.0f, 0.0f, 0.0f), m_CameraMoveSpeed(1.0f)
     {
         m_VertexArray.reset(Hyperion::VertexArray::Create());
 
@@ -123,8 +125,9 @@ public:
         m_BlueShader.reset(new Hyperion::Shader(blueShaderVertexSrc, blueShaderFragmentSrc));
     }
 
-    void OnUpdate() override
+    void OnUpdate(Hyperion::Timestep ts) override
     {
+
         //HYPERION_INFO("ExampleLayer::Update");
 
         // if (Hyperion::Input::IsKeyPressed(HYPERION_KEY_TAB))
@@ -132,11 +135,37 @@ public:
         //     HYPERION_TRACE("Tab key is pressed!");
         // }
 
+        float time = ts;
+
+        if (Hyperion::Input::IsKeyPressed(HYPERION_KEY_A))
+        {
+            m_CameraPosition.x -= m_CameraMoveSpeed * ts;
+        }else if (Hyperion::Input::IsKeyPressed(HYPERION_KEY_D))
+        {
+            m_CameraPosition.x += m_CameraMoveSpeed * ts;
+        }
+
+        if (Hyperion::Input::IsKeyPressed(HYPERION_KEY_S))
+        {
+            m_CameraPosition.y -= m_CameraMoveSpeed * ts;
+        }else if (Hyperion::Input::IsKeyPressed(HYPERION_KEY_W))
+        {
+            m_CameraPosition.y += m_CameraMoveSpeed * ts;
+        }
+
+        if (Hyperion::Input::IsKeyPressed(HYPERION_KEY_E))
+        {
+            m_CameraRotation -= m_CameraRotationSpeed * ts;
+        }else if (Hyperion::Input::IsKeyPressed(HYPERION_KEY_Q))
+        {
+            m_CameraRotation += m_CameraRotationSpeed * ts;
+        }
+
         Hyperion::RenderCommand::SetClearColor({0.1f, 0.1f, 0.1f, 1});
         Hyperion::RenderCommand::Clear();
 
-        m_Camera.SetPosition({0.5f, 0.5f, 0.0f});
-        m_Camera.SetRotation(45.0f);
+        m_Camera.SetPosition(m_CameraPosition);
+        m_Camera.SetRotation(m_CameraRotation);
 
         Hyperion::Renderer::BeginScene(m_Camera);
 
@@ -156,12 +185,11 @@ public:
 
     void OnEvent(Hyperion::Event& event) override
     {
-        if (event.GetEventType() == Hyperion::EventType::KeyPressed)
-        {
-            auto& keyEvent = (Hyperion::KeyPressedEvent&)event;
-            HYPERION_TRACE("Key Pressed: {} ", keyEvent.GetKeyCode());
-        }
-    };
+        // if (Hyperion::Input::IsKeyPressed(HYPERION_KEY_TAB))
+        // {
+        //     HYPERION_TRACE("Tab key is pressed!");
+        // }
+    }
 
 private:
     std::shared_ptr<Hyperion::VertexArray> m_VertexArray;
@@ -171,6 +199,10 @@ private:
     std::shared_ptr<Hyperion::Shader> m_BlueShader;
 
     Hyperion::OrthographicCamera m_Camera;
+    glm::vec3 m_CameraPosition;
+    float m_CameraRotation = 0.0f;
+    float m_CameraRotationSpeed = 40.0f;
+    float m_CameraMoveSpeed = 0.1f;
 };
 
 
