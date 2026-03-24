@@ -1,13 +1,14 @@
 #include "imgui_internal.h"
 #include "../Hyperion/src/Hyperion.h"
 #include "examples/libs/glfw/include/GLFW/glfw3.h"
+#include <glm/gtc/matrix_transform.hpp>
 
 
 class ExampleLayer : public Hyperion::Layer
 {
 public:
     ExampleLayer()
-        : Layer("Example"), m_Camera(-1.6f, 1.6f, -0.9f, 0.9f), m_CameraPosition(0.0f, 0.0f, 0.0f), m_CameraMoveSpeed(1.0f)
+        : Layer("Example"), m_Camera(-1.6f, 1.6f, -0.9f, 0.9f), m_CameraPosition(0.0f, 0.0f, 0.0f), m_CameraMoveSpeed(1.0f), m_SquarePosition(0.0f)
     {
         m_VertexArray.reset(Hyperion::VertexArray::Create());
 
@@ -63,6 +64,7 @@ public:
             layout(location = 1) in vec4 a_Color;
 
             uniform mat4 u_ViewProjection;
+            uniform mat4 u_Transform;
 
             out vec3 v_Position;
             out vec4 v_Color;
@@ -72,7 +74,7 @@ public:
             {
                 v_Position = a_Position;
                 v_Color = a_Color;
-                gl_Position = u_ViewProjection * vec4(a_Position, 1.0);
+                gl_Position = u_ViewProjection * u_Transform * vec4(a_Position, 1.0);
             }
         )";
 
@@ -98,13 +100,15 @@ public:
             layout(location = 0) in vec3 a_Position;
 
             uniform mat4 u_ViewProjection;
+            uniform mat4 u_Transform;
+
 
             out vec3 v_Position;
 
             void main()
             {
                 v_Position = a_Position;
-                gl_Position = u_ViewProjection * vec4(a_Position, 1.0);
+                gl_Position = u_ViewProjection * u_Transform * vec4(a_Position, 1.0);
             }
         )";
 
@@ -161,6 +165,24 @@ public:
             m_CameraRotation += m_CameraRotationSpeed * ts;
         }
 
+        if (Hyperion::Input::IsKeyPressed(HYPERION_KEY_J))
+        {
+            m_SquarePosition.x -= m_SquareMoveSpeed * ts;
+        }else if (Hyperion::Input::IsKeyPressed(HYPERION_KEY_L))
+        {
+            m_SquarePosition.x += m_SquareMoveSpeed * ts;
+        }
+
+        //Transform
+
+        if (Hyperion::Input::IsKeyPressed(HYPERION_KEY_I))
+        {
+            m_SquarePosition.y -= m_SquareMoveSpeed * ts;
+        }else if (Hyperion::Input::IsKeyPressed(HYPERION_KEY_K))
+        {
+            m_SquarePosition.y += m_SquareMoveSpeed * ts;
+        }
+
         Hyperion::RenderCommand::SetClearColor({0.1f, 0.1f, 0.1f, 1});
         Hyperion::RenderCommand::Clear();
 
@@ -169,8 +191,9 @@ public:
 
         Hyperion::Renderer::BeginScene(m_Camera);
 
+        glm::mat4 transform = glm::translate(glm::mat4(1.0f), m_SquarePosition);
 
-        Hyperion::Renderer::Submit(m_BlueShader, m_SquareVertexArray);
+        Hyperion::Renderer::Submit(m_BlueShader, m_SquareVertexArray, transform);
         Hyperion::Renderer::Submit(m_Shader, m_VertexArray);
 
 
@@ -201,8 +224,12 @@ private:
     Hyperion::OrthographicCamera m_Camera;
     glm::vec3 m_CameraPosition;
     float m_CameraRotation = 0.0f;
+
     float m_CameraRotationSpeed = 40.0f;
     float m_CameraMoveSpeed = 0.1f;
+
+    glm::vec3 m_SquarePosition;
+    float m_SquareMoveSpeed = 1.0f;
 };
 
 
