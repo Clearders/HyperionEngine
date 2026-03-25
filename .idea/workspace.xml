@@ -39,10 +39,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8dd5f59-e93d-40e7-9f52-abc8fb001637" name="更改" comment="Timestep">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Hyperion Engine/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Hyperion Engine/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="c8dd5f59-e93d-40e7-9f52-abc8fb001637" name="更改" comment="A part of transform">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/Renderer.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/Renderer.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sandbox/Sandbox.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Sandbox/Sandbox.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/glfw" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/glfw" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/glm" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/glm" afterDir="false" />
@@ -69,8 +67,8 @@
     <selectedModels>
       <entry key="inline" value="GPT-5.4" />
       <entry key="edit-panel" value="GPT-5 mini" />
-      <entry key="chat-panel" value="Gemini 3 Pro (Preview)" />
-      <entry key="agent-panel" value="Gemini 3 Pro (Preview)" />
+      <entry key="chat-panel" value="Gemini 3.1 Pro" />
+      <entry key="agent-panel" value="Gemini 3.1 Pro" />
     </selectedModels>
   </component>
   <component name="EmbeddingIndexingInfo">
@@ -183,11 +181,6 @@
     </key>
   </component>
   <component name="RunManager" selected="CMake 应用程序.Sandbox">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Hyperion" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="HyperionEngine" TARGET_NAME="Hyperion" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -344,7 +337,8 @@
       <workItem from="1774190539791" duration="599000" />
       <workItem from="1774275735461" duration="1700000" />
       <workItem from="1774354781941" duration="8546000" />
-      <workItem from="1774364026577" duration="1439000" />
+      <workItem from="1774364026577" duration="1504000" />
+      <workItem from="1774430150600" duration="1551000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
@@ -522,7 +516,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774363634412</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="A part of transform">
+      <option name="closed" value="true" />
+      <created>1774365538595</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1774365538595</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -574,7 +576,8 @@
     <MESSAGE value="Render Streaming" />
     <MESSAGE value="Code format update" />
     <MESSAGE value="Timestep" />
-    <option name="LAST_COMMIT_MESSAGE" value="Timestep" />
+    <MESSAGE value="A part of transform" />
+    <option name="LAST_COMMIT_MESSAGE" value="A part of transform" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -37,10 +37,10 @@ public:
         m_SquareVertexArray.reset(Hyperion::VertexArray::Create());
 
         float squareVertices[3 * 4] = {
-            -0.75f, -0.75f, 0.0f,
-            0.75f, -0.75f, 0.0f,
-            0.75f, 0.75f, 0.0f,
-            -0.75f, 0.75f, 0.0f
+            -0.5f, -0.5f, 0.0f,
+             0.5f, -0.5f, 0.0f,
+             0.5f,  0.5f, 0.0f,
+            -0.5f,  0.5f, 0.0f
         };
 
         std::shared_ptr<Hyperion::VertexBuffer> squareVertexBuffer;
@@ -165,24 +165,6 @@ public:
             m_CameraRotation += m_CameraRotationSpeed * ts;
         }
 
-        if (Hyperion::Input::IsKeyPressed(HYPERION_KEY_J))
-        {
-            m_SquarePosition.x -= m_SquareMoveSpeed * ts;
-        }else if (Hyperion::Input::IsKeyPressed(HYPERION_KEY_L))
-        {
-            m_SquarePosition.x += m_SquareMoveSpeed * ts;
-        }
-
-        //Transform
-
-        if (Hyperion::Input::IsKeyPressed(HYPERION_KEY_I))
-        {
-            m_SquarePosition.y -= m_SquareMoveSpeed * ts;
-        }else if (Hyperion::Input::IsKeyPressed(HYPERION_KEY_K))
-        {
-            m_SquarePosition.y += m_SquareMoveSpeed * ts;
-        }
-
         Hyperion::RenderCommand::SetClearColor({0.1f, 0.1f, 0.1f, 1});
         Hyperion::RenderCommand::Clear();
 
@@ -191,9 +173,19 @@ public:
 
         Hyperion::Renderer::BeginScene(m_Camera);
 
-        glm::mat4 transform = glm::translate(glm::mat4(1.0f), m_SquarePosition);
+        //glm::mat4 transform = glm::translate(glm::mat4(1.0f), m_SquarePosition);
+        glm::mat4 scale = glm::scale(glm::mat4(1.0f), glm::vec3(0.1f));
 
-        Hyperion::Renderer::Submit(m_BlueShader, m_SquareVertexArray, transform);
+        for (int y = 0; y < 20; y++)
+        {
+            for (int x = 0; x < 20; x++)
+            {
+                glm::vec3 pos(x * 0.11f, y * 0.11f, 0.0f);
+                glm::mat4 transform = glm::translate(glm::mat4(1.0f), pos) * scale;
+                Hyperion::Renderer::Submit(m_BlueShader, m_SquareVertexArray, transform);
+
+            }
+        }
         Hyperion::Renderer::Submit(m_Shader, m_VertexArray);
 
 
