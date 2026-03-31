@@ -4,6 +4,9 @@
 
 #include "Hyperion/hyperionpch.h"
 #include "Renderer.h"
+#include "Hyperion/Core/Log.h"
+
+#include "Platform/OpenGL/OpenGLShader.h"
 
 namespace Hyperion
 {
@@ -20,9 +23,22 @@ namespace Hyperion
 
     void Renderer::Submit(const std::shared_ptr<Shader>& shader, const std::shared_ptr<VertexArray>& vertexArray, const glm::mat4& transform)
     {
+        if (!shader)
+        {
+            HYPERION_CORE_ERROR("Renderer::Submit received null shader");
+            return;
+        }
+
         shader->Bind();
-        shader->UploadUniformMat4("u_ViewProjection", m_SceneData->ViewProjectionMatrix);
-        shader->UploadUniformMat4("u_Transform", transform);
+        auto glShader = std::dynamic_pointer_cast<OpenGLShader>(shader);
+        if (!glShader)
+        {
+            HYPERION_CORE_ERROR("Renderer::Submit failed to cast Shader to OpenGLShader. Renderer API: {}", static_cast<int>(Renderer::GetAPI()));
+            return;
+        }
+
+        glShader->UploadUniformMat4("u_ViewProjection", m_SceneData->ViewProjectionMatrix);
+        glShader->UploadUniformMat4("u_Transform", transform);
 
         vertexArray->Bind();
         RenderCommand::DrawIndexed(vertexArray);

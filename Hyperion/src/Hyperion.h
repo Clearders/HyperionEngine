@@ -20,6 +20,7 @@
 #include "Hyperion/Renderer/Shader.h"
 #include "Hyperion/Renderer/OrthographicCamera.h"
 #include "Hyperion/Renderer/RendererAPI.h"
+#include "Platform/OpenGL/OpenGLShader.h"
 //-----------------------------------------
 
 //---------------Entry point---------------

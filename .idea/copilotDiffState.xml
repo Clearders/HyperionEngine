@@ -12,6 +12,15 @@
             </PendingDiffInfo>
           </value>
         </entry>
+        <entry key="/OpenGLShader (snapshot).h">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="/OpenGLShader (snapshot).h" />
+              <option name="originalContent" value="//&#10;// Created by 13191 on 2026/3/31.&#10;//&#10;&#10;#ifndef HYPERIONENGINE_OPENGLSHADER_H&#10;#define HYPERIONENGINE_OPENGLSHADER_H&#10;&#10;#include &lt;string&gt;&#10;&#10;#include &quot;glm/fwd.hpp&quot;&#10;#include &quot;Hyperion/Renderer/Shader.h&quot;&#10;#include &quot;Hyperion/Core/Core.h&quot;&#10;&#10;&#10;namespace Hyperion&#10;{&#10;    class OpenGLShader : public Shader&#10;    {&#10;    public:&#10;        OpenGLShader(const std::string&amp; vertexSrc, const std::string&amp; fragmentSrc);&#10;        virtual ~OpenGLShader();&#10;&#10;        virtual void Bind() const override;&#10;        virtual void Unbind() const override;&#10;&#10;        virtual void UploadUniformFloat4f(const std::string&amp; name, const glm::vec4&amp; values) = 0;&#10;        virtual void UploadUniformMat4(const std::string&amp; name, const glm::mat4&amp; matrix) = 0;&#10;&#10;    private:&#10;        uint32_t m_RendererID;&#10;    };&#10;} // Hyperion&#10;&#10;#endif //HYPERIONENGINE_OPENGLSHADER_H&#10;" />
+              <option name="updatedContent" value="//&#10;// Created by 13191 on 2026/3/31.&#10;//&#10;&#10;#ifndef HYPERIONENGINE_OPENGLSHADER_H&#10;#define HYPERIONENGINE_OPENGLSHADER_H&#10;&#10;#include &lt;string&gt;&#10;&#10;#include &quot;glm/fwd.hpp&quot;&#10;#include &quot;Hyperion/Renderer/Shader.h&quot;&#10;#include &quot;Hyperion/Core/Core.h&quot;&#10;&#10;&#10;namespace Hyperion&#10;{&#10;    class OpenGLShader : public Shader&#10;    {&#10;    public:&#10;        OpenGLShader(const std::string&amp; vertexSrc, const std::string&amp; fragmentSrc);&#10;        virtual ~OpenGLShader();&#10;&#10;        virtual void Bind() const override;&#10;        virtual void Unbind() const override;&#10;&#10;        virtual void UploadUniformFloat4f(const std::string&amp; name, const glm::vec4&amp; values) override;&#10;        virtual void UploadUniformMat4(const std::string&amp; name, const glm::mat4&amp; matrix) override;&#10;&#10;    private:&#10;        uint32_t m_RendererID;&#10;    };&#10;} // Hyperion&#10;&#10;#endif //HYPERIONENGINE_OPENGLSHADER_H" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
         <entry key="/RendererAPI (snapshot).h">
           <value>
             <PendingDiffInfo>

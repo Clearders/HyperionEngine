@@ -17,10 +17,6 @@
 
 #include "../Core/Application.h"
 
-#ifdef IMGUI_IMPL_API
-#undef IMGUI_IMPL_API
-#endif
-#define IMGUI_IMPL_API
 
 
 namespace Hyperion

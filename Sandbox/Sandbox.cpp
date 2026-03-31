@@ -3,6 +3,7 @@
 #include "examples/libs/glfw/include/GLFW/glfw3.h"
 #include <glm/gtc/matrix_transform.hpp>
 
+#include "glm/gtc/type_ptr.hpp"
 
 class ExampleLayer : public Hyperion::Layer
 {
@@ -92,9 +93,9 @@ public:
             }
         )";
 
-        m_Shader.reset(new Hyperion::Shader(vertexSrc, fragmentSrc));
+        m_Shader.reset(Hyperion::Shader::Create(vertexSrc, fragmentSrc));
 
-        std::string blueShaderVertexSrc = R"(
+        std::string flatColorShaderVertexSrc = R"(
             #version 330 core
 
             layout(location = 0) in vec3 a_Position;
@@ -112,21 +113,22 @@ public:
             }
         )";
 
-        std::string blueShaderFragmentSrc = R"(
+        std::string flatColorShaderFragmentSrc = R"(
             #version 330 core
 
             layout(location = 0) out vec4 color;
 
             in vec3 v_Position;
-            in vec4 v_Color;
+
+            uniform vec4 u_Color;
 
             void main()
             {
-                color = vec4(0.2, 0.3, 0.8, 1.0);
+                color = u_Color;
             }
         )";
 
-        m_BlueShader.reset(new Hyperion::Shader(blueShaderVertexSrc, blueShaderFragmentSrc));
+        m_FlatColorShader.reset(Hyperion::Shader::Create(flatColorShaderVertexSrc, flatColorShaderFragmentSrc));
     }
 
     void OnUpdate(Hyperion::Timestep ts) override
@@ -176,13 +178,35 @@ public:
         //glm::mat4 transform = glm::translate(glm::mat4(1.0f), m_SquarePosition);
         glm::mat4 scale = glm::scale(glm::mat4(1.0f), glm::vec3(0.1f));
 
+        // glm::vec4 redColor = glm::vec4(0.8f, 0.2f, 0.3f, 1.0f);
+        // glm::vec4 greenColor = glm::vec4(0.0f, 1.0f, 0.0f, 1.0f);
+        // glm::vec4 blueColor = glm::vec4(0.2f, 0.3f, 0.8f, 1.0f);
+
+        //Hyperion::MaterialRef material = new Hyperion::Material::Create(m_FlatColorShader);
+
+        //material->SetFloat4("u_Color", redColor);
+        //squareMesh->SetMaterial(material);
+
+        // Guard shader type before dereferencing the OpenGL-specific functions.
+        auto glFlatColorShader = std::dynamic_pointer_cast<Hyperion::OpenGLShader>(m_FlatColorShader);
+        if (!glFlatColorShader)
+        {
+            HYPERION_ERROR("Flat color shader cast failed. Renderer API: {}", static_cast<int>(Hyperion::Renderer::GetAPI()));
+            return;
+        }
+
+        glFlatColorShader->Bind();
+        glFlatColorShader->UploadUniformFloat4("u_Color", glm::vec4(m_SquareColor, 1.0f));
+
+
         for (int y = 0; y < 20; y++)
         {
             for (int x = 0; x < 20; x++)
             {
                 glm::vec3 pos(x * 0.11f, y * 0.11f, 0.0f);
                 glm::mat4 transform = glm::translate(glm::mat4(1.0f), pos) * scale;
-                Hyperion::Renderer::Submit(m_BlueShader, m_SquareVertexArray, transform);
+
+                Hyperion::Renderer::Submit(m_FlatColorShader, m_SquareVertexArray, transform);
 
             }
         }
@@ -195,7 +219,9 @@ public:
 
     virtual void OnImGuiRender() override
     {
-
+        ImGui::Begin("Settings##SandboxLayer");
+        ImGui::ColorEdit3("Square Color", glm::value_ptr(m_SquareColor));
+        ImGui::End();
     }
 
     void OnEvent(Hyperion::Event& event) override
@@ -211,7 +237,7 @@ private:
     std::shared_ptr<Hyperion::Shader> m_Shader;
 
     std::shared_ptr<Hyperion::VertexArray> m_SquareVertexArray;
-    std::shared_ptr<Hyperion::Shader> m_BlueShader;
+    std::shared_ptr<Hyperion::Shader> m_FlatColorShader;
 
     Hyperion::OrthographicCamera m_Camera;
     glm::vec3 m_CameraPosition;
@@ -222,6 +248,8 @@ private:
 
     glm::vec3 m_SquarePosition;
     float m_SquareMoveSpeed = 1.0f;
+
+    glm::vec3 m_SquareColor = {0.2f, 0.3f, 0.8f};
 };
 
 

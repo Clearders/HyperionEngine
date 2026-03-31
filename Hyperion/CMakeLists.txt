@@ -49,6 +49,8 @@ add_library(Hyperion SHARED
         ${HYPERION_HEADERS}
         src/Hyperion/Core/Timestep.cpp
         src/Hyperion/Core/Timestep.h
+        src/Platform/OpenGL/OpenGLShader.cpp
+        src/Platform/OpenGL/OpenGLShader.h
 )
 
 target_compile_features(Hyperion PUBLIC cxx_std_17)
