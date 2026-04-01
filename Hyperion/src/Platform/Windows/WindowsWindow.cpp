@@ -157,6 +157,7 @@ namespace Hyperion
 
     void WindowsWindow::Shutdown()
     {
+        delete m_Context;
         glfwDestroyWindow(m_Window);
     }
 

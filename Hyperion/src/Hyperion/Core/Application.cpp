@@ -32,6 +32,11 @@ namespace Hyperion
 
     Application::~Application()
     {
+        // Manually clean up ImGuiLayer before LayerStack destructor runs
+        // Use LayerStack::PopOverlay directly to avoid double OnDetach call
+        // (Application::PopOverlay has a bug where it calls OnDetach twice)
+        m_LayerStack.PopOverlay(m_ImGuiLayer);
+        delete m_ImGuiLayer;
     }
 
     void Application::OnEvent(Event& event)

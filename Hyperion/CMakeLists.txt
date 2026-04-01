@@ -41,6 +41,7 @@ set(IMGUI_SOURCES
 )
 
 add_library(imgui STATIC ${IMGUI_SOURCES})
+target_compile_definitions(imgui PRIVATE HYPERION_BUILD_DLL PUBLIC HYPERION_PLATFORM_WINDOWS)
 target_include_directories(imgui SYSTEM PUBLIC "${IMGUI_DIR}" "${IMGUI_DIR}/backends")
 target_link_libraries(imgui PUBLIC glfw OpenGL::GL glad)
 

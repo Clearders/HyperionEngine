@@ -39,20 +39,12 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8dd5f59-e93d-40e7-9f52-abc8fb001637" name="更改" comment="full transform">
-      <change afterPath="$PROJECT_DIR$/Hyperion/src/Platform/OpenGL/OpenGLShader.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hyperion/src/Platform/OpenGL/OpenGLShader.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/copilotDiffState.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/copilotDiffState.xml" afterDir="false" />
+    <list default="true" id="c8dd5f59-e93d-40e7-9f52-abc8fb001637" name="更改" comment="An ImGui window error happened">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hyperion Engine.sln.DotSettings.user" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hyperion Engine.slnx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Hyperion/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Application.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Application.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/ImGui/ImGuiLayer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/ImGui/ImGuiLayer.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/Renderer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/Renderer.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/Shader.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/Shader.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/Shader.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/Shader.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sandbox/Sandbox.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Sandbox/Sandbox.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Platform/Windows/WindowsWindow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Platform/Windows/WindowsWindow.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/glfw" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/glfw" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/glm" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/glm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/imgui" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/imgui" afterDir="false" />
@@ -194,17 +186,17 @@
     </key>
   </component>
   <component name="RunManager" selected="CMake 应用程序.Sandbox">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Hyperion" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="HyperionEngine" TARGET_NAME="Hyperion" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="Sandbox" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="HyperionEngine" TARGET_NAME="Sandbox" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="HyperionEngine" RUN_TARGET_NAME="Sandbox">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -367,7 +359,9 @@
       <workItem from="1774842267409" duration="620000" />
       <workItem from="1774953835688" duration="253000" />
       <workItem from="1774960041500" duration="5619000" />
-      <workItem from="1774966253982" duration="746000" />
+      <workItem from="1774966253982" duration="2073000" />
+      <workItem from="1774968889592" duration="299000" />
+      <workItem from="1775037171344" duration="2397000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
@@ -561,7 +555,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774431976118</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="An ImGui window error happened">
+      <option name="closed" value="true" />
+      <created>1774967065273</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1774967065273</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -616,7 +618,8 @@
     <MESSAGE value="Timestep" />
     <MESSAGE value="A part of transform" />
     <MESSAGE value="full transform" />
-    <option name="LAST_COMMIT_MESSAGE" value="full transform" />
+    <MESSAGE value="An ImGui window error happened" />
+    <option name="LAST_COMMIT_MESSAGE" value="An ImGui window error happened" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
