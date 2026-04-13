@@ -1,4 +1,5 @@
 ﻿#pragma once
+#include <memory>
 
 #ifdef HYPERION_PLATFORM_WINDOWS
 #ifdef HYPERION_STATIC
@@ -22,3 +23,14 @@
 
 #define BIT(x) (1 << (x))
 #define BIND_EVENT_FN(x) std::bind(&x, this, std::placeholders::_1)
+
+
+namespace Hyperion
+{
+    template <typename T>
+    using Scope = std::unique_ptr<T>;
+
+    template <typename T>
+    using Ref = std::shared_ptr<T>;
+
+}

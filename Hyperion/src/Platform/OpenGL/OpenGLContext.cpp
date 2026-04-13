@@ -12,6 +12,7 @@
 
 
 #include "OpenGLContext.h"
+#include "OpenGLError.h"
 #include "../../Hyperion/hyperionpch.h"
 #include "../../Hyperion/Core/Log.h"
 
@@ -32,6 +33,7 @@ namespace Hyperion
         glfwMakeContextCurrent(m_windowHandle);
         int status = gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
         HYPERION_CORE_ASSERT(status, "Failed to initialize GLAD");
+        HYPERION_CORE_ASSERT(GLAD_GL_VERSION_4_5, "OpenGL 4.5 is required by current renderer path");
 
         HYPERION_CORE_INFO("OpenGL Info:");
         HYPERION_CORE_INFO("  Vendor: {0}", (const char*)glGetString(GL_VENDOR));
@@ -41,6 +43,8 @@ namespace Hyperion
 
     void OpenGLContext::SwapBuffers()
     {
+        HYPERION_GL_CHECKPOINT("EndOfFrame-BeforeSwapBuffers");
         glfwSwapBuffers(m_windowHandle);
+        HYPERION_GL_CHECKPOINT("EndOfFrame-AfterSwapBuffers");
     }
 }

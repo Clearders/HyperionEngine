@@ -6,11 +6,29 @@ add_executable(Sandbox Sandbox.cpp)
 
 target_compile_features(Sandbox PUBLIC cxx_std_17)
 target_include_directories(Sandbox PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
-target_compile_definitions(Sandbox PRIVATE HYPERION_DLL)
 
 hyperion_configure_target(Sandbox)
 
 target_link_libraries(Sandbox PRIVATE Hyperion)
+
+# Keep runtime assets beside the executable so relative paths like assets/textures/*.png always resolve.
+add_custom_command(TARGET Sandbox POST_BUILD
+        COMMAND ${CMAKE_COMMAND} -E make_directory
+        "$<TARGET_FILE_DIR:Sandbox>/assets"
+        COMMAND ${CMAKE_COMMAND} -E copy_directory
+        "${CMAKE_CURRENT_SOURCE_DIR}/assets"
+        "$<TARGET_FILE_DIR:Sandbox>/assets"
+        COMMENT "Copying Sandbox assets to output directory"
+)
+
+if (WIN32)
+    # Keep Hyperion.dll next to Sandbox.exe so Windows can resolve the runtime dependency.
+    add_custom_command(TARGET Sandbox POST_BUILD
+            COMMAND ${CMAKE_COMMAND} -E copy_if_different
+            $<TARGET_FILE:Hyperion>
+            $<TARGET_FILE_DIR:Sandbox>
+    )
+endif ()
 
 set_target_properties(Sandbox PROPERTIES
         RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin

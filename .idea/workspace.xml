@@ -24,6 +24,7 @@
     <generated>
       <config projectName="HyperionEngine" targetName="glfw" folderName="GLFW3" />
       <config projectName="HyperionEngine" targetName="Hyperion" />
+      <config projectName="HyperionEngine" targetName="stb_image" />
       <config projectName="HyperionEngine" targetName="Sandbox" />
       <config projectName="HyperionEngine" targetName="spdlog" />
       <config projectName="HyperionEngine" targetName="update_mappings" folderName="GLFW3" />
@@ -36,15 +37,39 @@
   <component name="CMakeSettings">
     <configurations>
       <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" GENERATION_OPTIONS="-DVCPKG_TARGET_TRIPLET=x64-mingw-dynamic" />
+      <configuration PROFILE_NAME="Release" ENABLED="true" CONFIG_NAME="Release" />
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8dd5f59-e93d-40e7-9f52-abc8fb001637" name="更改" comment="An ImGui window error happened">
+    <list default="true" id="c8dd5f59-e93d-40e7-9f52-abc8fb001637" name="更改" comment="A ImGui linked bug fixed">
+      <change afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/Texture.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/Texture.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hyperion/src/Platform/OpenGL/OpenGLError.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hyperion/src/Platform/OpenGL/OpenGLTexture.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hyperion/src/Platform/OpenGL/OpenGLTexture.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sandbox/assets/textures/test.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/stb_image/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/stb_image/stb_image.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hyperion/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Application.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Application.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Core.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Core/Core.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/ImGui/ImGuiLayer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/ImGui/ImGuiLayer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/RenderCommand.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/RenderCommand.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/Renderer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/Renderer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/Renderer.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/Renderer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/RendererAPI.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/RendererAPI.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/VertexArray.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Hyperion/Renderer/VertexArray.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Platform/OpenGL/OpenGLContext.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Platform/OpenGL/OpenGLContext.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Platform/OpenGL/OpenGLRendererAPI.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Platform/OpenGL/OpenGLRendererAPI.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Platform/OpenGL/OpenGLRendererAPI.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Platform/OpenGL/OpenGLRendererAPI.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Platform/OpenGL/OpenGLVertexArray.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Platform/OpenGL/OpenGLVertexArray.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperion/src/Platform/OpenGL/OpenGLVertexArray.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Platform/OpenGL/OpenGLVertexArray.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hyperion/src/Platform/Windows/WindowsWindow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperion/src/Platform/Windows/WindowsWindow.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sandbox/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Sandbox/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sandbox/Sandbox.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Sandbox/Sandbox.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/glfw" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/glfw" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/glm" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/glm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/imgui" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/imgui" afterDir="false" />
@@ -70,12 +95,12 @@
     <selectedModels>
       <entry key="inline" value="GPT-5.4" />
       <entry key="edit-panel" value="GPT-5 mini" />
-      <entry key="chat-panel" value="Gemini 3.1 Pro" />
-      <entry key="agent-panel" value="Gemini 3.1 Pro" />
+      <entry key="chat-panel" value="GPT-5.3-Codex" />
+      <entry key="agent-panel" value="GPT-5.3-Codex" />
     </selectedModels>
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="2806" />
+    <option name="cachedIndexableFilesCount" value="2815" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileTemplateManagerImpl">
@@ -168,18 +193,22 @@
     "cidr.known.project.marker": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/13191/RiderProjects/Hyperion Engine",
+    "last_opened_file_path": "C:/Users/13191/RiderProjects/Hyperion Engine/Sandbox/assets/textures",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "com.github.copilot.settings.mcp.McpConfigurable",
+    "settings.editor.selected.configurable": "CMakeSettings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\13191\RiderProjects\Hyperion Engine\Sandbox\assets\textures" />
+      <recent name="C:\Users\13191\RiderProjects\Hyperion Engine\cmake-build-debug\bin" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\13191\RiderProjects\Hyperion Engine" />
       <recent name="C:\Users\13191\RiderProjects\Hyperion Engine\Hyperion" />
@@ -216,12 +245,18 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="stb_image" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="HyperionEngine" TARGET_NAME="stb_image" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="CMake 应用程序.Hyperion" />
       <item itemvalue="CMake 应用程序.Sandbox" />
       <item itemvalue="CMake 应用程序.glad" />
       <item itemvalue="CMake 应用程序.glm" />
       <item itemvalue="CMake 应用程序.spdlog" />
+      <item itemvalue="CMake 应用程序.stb_image" />
     </list>
   </component>
   <component name="TaskManager">
@@ -361,7 +396,21 @@
       <workItem from="1774960041500" duration="5619000" />
       <workItem from="1774966253982" duration="2073000" />
       <workItem from="1774968889592" duration="299000" />
-      <workItem from="1775037171344" duration="2397000" />
+      <workItem from="1775037171344" duration="2439000" />
+      <workItem from="1775109010125" duration="2168000" />
+      <workItem from="1775191950684" duration="3000" />
+      <workItem from="1775221364623" duration="2359000" />
+      <workItem from="1775354181596" duration="603000" />
+      <workItem from="1775556950224" duration="598000" />
+      <workItem from="1775744578997" duration="3122000" />
+      <workItem from="1775796618666" duration="188000" />
+      <workItem from="1775811906796" duration="549000" />
+      <workItem from="1775834539462" duration="602000" />
+      <workItem from="1775893970833" duration="4697000" />
+      <workItem from="1775971624576" duration="1953000" />
+      <workItem from="1776004633754" duration="2537000" />
+      <workItem from="1776055551340" duration="1844000" />
+      <workItem from="1776089666787" duration="8039000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
@@ -563,7 +612,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774967065273</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="A ImGui linked bug fixed">
+      <option name="closed" value="true" />
+      <created>1775039611329</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1775039611329</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -619,7 +676,8 @@
     <MESSAGE value="A part of transform" />
     <MESSAGE value="full transform" />
     <MESSAGE value="An ImGui window error happened" />
-    <option name="LAST_COMMIT_MESSAGE" value="An ImGui window error happened" />
+    <MESSAGE value="A ImGui linked bug fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="A ImGui linked bug fixed" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

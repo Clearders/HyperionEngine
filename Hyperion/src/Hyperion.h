@@ -15,12 +15,15 @@
 //---------------Renderer   ---------------
 #include "Hyperion/Renderer/Renderer.h"
 #include "Hyperion/Renderer/RenderCommand.h"
+
 #include "Hyperion/Renderer/VertexArray.h"
 #include "Hyperion/Renderer/Buffer.h"
 #include "Hyperion/Renderer/Shader.h"
-#include "Hyperion/Renderer/OrthographicCamera.h"
+#include "Hyperion/Renderer/Texture.h"
 #include "Hyperion/Renderer/RendererAPI.h"
 #include "Platform/OpenGL/OpenGLShader.h"
+
+#include "Hyperion/Renderer/OrthographicCamera.h"
 //-----------------------------------------
 
 //---------------Entry point---------------

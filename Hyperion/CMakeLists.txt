@@ -45,20 +45,34 @@ target_compile_definitions(imgui PRIVATE HYPERION_BUILD_DLL PUBLIC HYPERION_PLAT
 target_include_directories(imgui SYSTEM PUBLIC "${IMGUI_DIR}" "${IMGUI_DIR}/backends")
 target_link_libraries(imgui PUBLIC glfw OpenGL::GL glad)
 
-add_library(Hyperion SHARED
+set(HYPERION_LIBRARY_TYPE STATIC)
+if (HYPERION_BUILD_SHARED)
+    set(HYPERION_LIBRARY_TYPE SHARED)
+endif ()
+
+add_library(Hyperion ${HYPERION_LIBRARY_TYPE}
         ${HYPERION_SOURCES}
         ${HYPERION_HEADERS}
         src/Hyperion/Core/Timestep.cpp
         src/Hyperion/Core/Timestep.h
         src/Platform/OpenGL/OpenGLShader.cpp
         src/Platform/OpenGL/OpenGLShader.h
+        src/Hyperion/Renderer/Texture.cpp
+        src/Hyperion/Renderer/Texture.h
+        src/Platform/OpenGL/OpenGLTexture.cpp
+        src/Platform/OpenGL/OpenGLTexture.h
 )
 
 target_compile_features(Hyperion PUBLIC cxx_std_17)
 target_include_directories(Hyperion PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src)
 
 if (WIN32)
-    target_compile_definitions(Hyperion PUBLIC HYPERION_PLATFORM_WINDOWS PRIVATE HYPERION_BUILD_DLL)
+    target_compile_definitions(Hyperion PUBLIC HYPERION_PLATFORM_WINDOWS)
+    if (HYPERION_BUILD_SHARED)
+        target_compile_definitions(Hyperion PRIVATE HYPERION_BUILD_DLL)
+    else ()
+        target_compile_definitions(Hyperion PUBLIC HYPERION_STATIC)
+    endif ()
 endif ()
 
 hyperion_configure_target(Hyperion)
@@ -75,4 +89,5 @@ target_link_libraries(Hyperion
         OpenGL::GL
         imgui
         glm::glm
+        stb_image
 )

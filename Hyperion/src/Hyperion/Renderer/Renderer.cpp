@@ -5,6 +5,7 @@
 #include "Hyperion/hyperionpch.h"
 #include "Renderer.h"
 #include "Hyperion/Core/Log.h"
+#include "Hyperion/Core/Core.h"
 
 #include "Platform/OpenGL/OpenGLShader.h"
 
@@ -21,7 +22,7 @@ namespace Hyperion
     {
     }
 
-    void Renderer::Submit(const std::shared_ptr<Shader>& shader, const std::shared_ptr<VertexArray>& vertexArray, const glm::mat4& transform)
+    void Renderer::Submit(const Hyperion::Ref<Shader>& shader, const Hyperion::Ref<VertexArray>& vertexArray, const glm::mat4& transform)
     {
         if (!shader)
         {

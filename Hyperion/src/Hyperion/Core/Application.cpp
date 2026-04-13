@@ -13,7 +13,6 @@
 #include "examples/libs/glfw/include/GLFW/glfw3.h"
 #include "Hyperion/Renderer/Renderer.h"
 
-
 namespace Hyperion
 {
     Application* Application::m_Instance = nullptr;
